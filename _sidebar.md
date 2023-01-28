@@ -1,0 +1,6 @@
+[一起来安装吧](/subpages/install.md)
+[配置亿下](/subpages/conf.md)
+[怎么使用呢](/subpages/use.md)
+[正则表达式命令](/subpages/cmd.md)
+[装载插件](/subpages/plugin.md)
+[插件市场](/subpages/store.md)
