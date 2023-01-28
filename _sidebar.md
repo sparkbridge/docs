@@ -4,3 +4,4 @@
 [正则表达式命令](/subpages/cmd.md)
 [装载插件](/subpages/plugin.md)
 [插件市场](/subpages/store.md)
+[关于我们](/subpages/about.md)
