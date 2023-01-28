@@ -6,7 +6,7 @@
 
 ### Git Clone
 
-来到BDS的plugins/nodejs文件夹
+来到BDS的`plugins/nodejs`文件夹
 
 执行
 
@@ -27,3 +27,7 @@ clone结束后，开启BDS
 从我们的官方页面：https://www.minebbs.com/resources/sparkbridge.5480/
 
 点击购买下载即可。
+
+下载下来的压缩包请放入`plugins/nodejs`文件夹。
+
+然后解压。
