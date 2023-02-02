@@ -2,6 +2,8 @@
 [配置亿下](/subpages/conf.md)
 [怎么使用呢](/subpages/use.md)
 [正则表达式命令](/subpages/cmd.md)
+[常见问题](/subpages/qa.md)
 [装载插件](/subpages/plugin.md)
+[开发指南](/subpages/develop.md)
 [插件市场](/subpages/store.md)
 [关于我们](/subpages/about.md)
