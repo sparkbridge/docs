@@ -28,6 +28,6 @@ clone结束后，开启BDS
 
 点击购买下载即可。
 
-下载下来的压缩包请放入`plugins/nodejs`文件夹。
+下载下来的压缩包请解压。
 
-然后解压。
+然后把`.llplugin`文件放到BDS的plugins文件夹
