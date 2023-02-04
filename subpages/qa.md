@@ -28,4 +28,6 @@ Liteloader的版本需要大于2.5.0。
 输入`spark slider <ticket>`
 
 
+## 教程看不懂怎么办？
 
+![](/qa/pa.png)
