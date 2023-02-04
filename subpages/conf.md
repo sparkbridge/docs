@@ -93,7 +93,12 @@
     "group": 114514,  // 使用机器人发群号
     "admin": [],   // 管理员，是一个数组，可用添加多个
     "auto_wl": true,  // 是否在玩家绑定白名单之后直接执行allowlist add命令
-    "debug":true  // 是否显示调试信息
+    "debug":true,  // 是否显示调试信息
+    "msg":{
+        "join":true,  // 是否显示玩家进入服务器
+        "left":true,  // 是否显示玩家离开服务器
+        "chat":true  // 是否显示玩家聊天
+    }
 }
 ```
 
