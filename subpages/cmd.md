@@ -30,3 +30,17 @@ s|list
 ```
 
 向服务器执行`list`命令
+
+## t
+
+向服务器里面发送信息
+
+示例
+```
+t|lition:nmsl 
+```
+向`lition`发送`nmsl`
+```
+t|all:nmsl
+```
+向所有人发送`nmsl`
