@@ -5,7 +5,7 @@
 1. 无法再多个插件中获取玩家对应XBOXID
 2. 无法注册正则表达式的命令
 3. 插件无法热加载与热卸载
-4. 无法多服联动，但是这个已经在计划内，详见[SparkCenter](https://github.com/spakebridge/sparkcenter)
+4. 无法多服联动，但是这个已经在计划内，详见[SparkCenter](https://github.com/sparkbridge/sparkcenter)
 5. 统一的API过少，需要特殊操作，例如禁言、踢人需要开发者自行实现。
 
 > [!WARNING] 本页面所阐述的为SparkBridge插件开发方法，SparkCenter插件由于还未开发完成不在阐述范围内。
