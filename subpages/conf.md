@@ -21,7 +21,7 @@
 3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
 4. 在配置文件中填入账号和密码，**更改`post-format`为`array`**，修改`access-token`为你喜欢的密码
 5. 再次运行go-cqhttp以登录帐号
-
+> [!WARNING] 请把第四步认真做完
 
 ``` json
 {
