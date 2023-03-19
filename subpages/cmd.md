@@ -67,7 +67,7 @@ t|all:nmsl
 
 可直接在正则表达式中调用变量。
 如：
-```JSON
+``` json
 //spark.regex的config.json中的示例：
 {
     "^我是(.+)":{
