@@ -1,5 +1,9 @@
 # 问答
 
+## 为什么出现报错：“解析群聊信息出现异常 e.foreach is not a function”？
+
+说明你应该回到 [配置亿下](/subpages/conf.md) 把gocq第四步重新做一次。把string改成array！！！！
+
 ## 为什么我的plugins文件夹没有nodejs文件夹？
 
 Liteloader的版本需要大于2.5.0。
