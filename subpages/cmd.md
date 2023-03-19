@@ -64,3 +64,17 @@ t|all:nmsl
 |%CARD%|发信人群昵称|
 |%XBOXID%|发信人绑定的游戏ID|
 |%NAME%|如果未绑定游戏ID，则返回群昵称，反之则返回游戏ID|
+
+可直接在正则表达式中调用变量。
+如：
+```
+//spark.regex的config.json中的示例：
+{
+    "^我是(.+)":{
+        "cmd":"reply|你是$1",
+        "adm":false
+    }
+}
+```
+此时群里发送“我是%XBOXID%”
+返回“你是xxxxxxx”（发信人绑定的游戏ID）
