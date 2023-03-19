@@ -12,8 +12,34 @@
 ## 登录项配置文件
 打开`config.json`
 
-### 使用oicq方案
+### 使用go-cqhttp方案
 
+> [!WARNING] 请连不上的同学自备科学上网软件
+
+1. 下载[最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
+2. 双击运行，首次运行时会释放启动文件
+3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
+4. 在配置文件中填入账号和密码，更改`post-format`为`array`，修改`access-token`为你喜欢的密码
+5. 再次运行go-cqhttp以登录帐号
+
+
+``` json
+{
+    "qq":{
+        "qid":114514,  //QQ号
+        "pwd":"1919810",  // go-cqhttp中的 `access-token` 项，请确保一致
+        "log_level":"warn",  // 日志输出等级，不需要更改
+        "platform":1  // 用不到
+    },
+    "adapter":{
+        "type":"gocq",  // 适配方式，改为gocq
+        "target":"ws://127.0.0.1:8333"  // go-cqhttp中的websocket连接地址，根据实际情况更改
+    }
+}
+```
+
+### 使用oicq方案
+> [!WARNING] Oicq插件年久失修，若出现无法登陆，请使用gocq
 ``` json
 {
     "qq":{
@@ -47,34 +73,9 @@
 ```
 然后尝试扫码登录，注意扫码之后手机客户端会被顶下线。
 
-### 使用go-cqhttp方案
-
-> [!WARNING] 请连不上的同学自备科学上网软件
-
-1. 下载[最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
-2. 双击运行，首次运行时会释放启动文件
-3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
-4. 在配置文件中填入账号和密码，更改`post-format`为`array`，修改`access-token`为你喜欢的密码
-5. 再次运行go-cqhttp以登录帐号
-
-
-``` json
-{
-    "qq":{
-        "qid":114514,  //QQ号
-        "pwd":"1919810",  // go-cqhttp中的 `access-token` 项，请确保一致
-        "log_level":"warn",  // 日志输出等级，不需要更改
-        "platform":1  // 用不到
-    },
-    "adapter":{
-        "type":"gocq",  // 适配方式，改为gocq
-        "target":"ws://127.0.0.1:8333"  // go-cqhttp中的websocket连接地址，根据实际情况更改
-    }
-}
-```
 
 ## 基本使用配置文件
-
+> 请不要修改`/plugins/nodejs/sparkbridge/`的config！
 ### spark.mc
 
 插件`spark.mc`可用提供基本的群服互通交互
@@ -88,7 +89,8 @@
         "unbind": ".解绑",
         "add_wl": ".加白名",
         "del_wl": ".解白名",
-        "cmd":".执行"
+        "cmd":".执行",
+        "query":"在线玩家"
     },
     "group": 114514,  // 使用机器人发群号
     "admin": [],   // 管理员，是一个数组，可用添加多个
