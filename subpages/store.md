@@ -31,3 +31,11 @@ BE/JE版服务器查询
 ![](/store/custmap.png)
 
 链接：https://www.minebbs.com/resources/spark-custmap.5481/
+
+## spark.os
+
+群内自助查询服务器状态
+
+![](/store/sparkos.jpg)
+
+链接：https://www.minebbs.com/resources/spark-os.5657/
