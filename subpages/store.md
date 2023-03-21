@@ -41,3 +41,5 @@ BE/JE版服务器查询
 ![](/store/sparkos.jpg)
 
 链接：https://www.minebbs.com/resources/spark-os.5657/
+
+[前往minebbs寻找更多](https://www.minebbs.com/search/1291389/?q=spark.&o=relevance)
