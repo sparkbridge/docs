@@ -51,5 +51,27 @@ BE/JE版服务器查询
 链接：https://www.minebbs.com/resources/spark-welcome.5753/
 
 
+## spark.diemsg
 
+死亡转发插件
+
+![](/store/diemsg.jpg)
+
+链接：https://www.minebbs.com/resources/spark-diemsg.5733/
+
+## spark.qbot
+
+基于青云客AI的聊天BOT
+
+![](/store/qbot.jpg)
+
+链接:https://www.minebbs.com/resources/spark-qbot.5744/
+
+## spark.pic
+
+群内获取二次元图片
+
+![](/store/spark.pic.png)
+
+链接：https://www.minebbs.com/resources/spark-pic.5743/
 >>[前往minebbs以寻找更多](https://www.minebbs.com/search/1291389/?q=spark.&o=relevance)
