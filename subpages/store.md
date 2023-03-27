@@ -42,6 +42,14 @@ BE/JE版服务器查询
 
 链接：https://www.minebbs.com/resources/spark-os.5657/
 
+## spark.welcome
+
+对入群欢迎的支持
+
+![](/store/welcome.jpg)
+
+链接：https://www.minebbs.com/resources/spark-welcome.5753/
 
 
-[前往minebbs寻找更多](https://www.minebbs.com/search/1291389/?q=spark.&o=relevance)
+
+>>[前往minebbs以寻找更多](https://www.minebbs.com/search/1291389/?q=spark.&o=relevance)
