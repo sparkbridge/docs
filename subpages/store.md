@@ -59,6 +59,14 @@ BE/JE版服务器查询
 
 链接：https://www.minebbs.com/resources/spark-diemsg.5733/
 
+## death.message
+
+双翻译版本死亡转发插件
+
+![](/store/deathmessage.jpg)
+
+链接：https://www.minebbs.com/resources/death-message-sparkbridge-q.5782/
+
 ## spark.qbot
 
 基于青云客AI的聊天BOT
