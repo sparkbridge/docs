@@ -4,6 +4,10 @@
 
 说明你应该回到 [配置亿下](/subpages/conf.md) 把gocq第四步重新做一次。把string改成array！！！！
 
+## 为什么部分插件无法加载，显示“SyntaxError: Unexpected token ﻿□ in JSON at position 0”？
+
+该故障原因因为编码错误导致的。请检查spark.mc的config以及插件本身的config文件格式是否为UTF-8（UTF8 BOM也不行）
+
 ## 为什么我的plugins文件夹没有nodejs文件夹？
 
 Liteloader的版本需要大于2.5.0。
