@@ -51,13 +51,17 @@ BE/JE版服务器查询
 链接：https://www.minebbs.com/resources/spark-welcome.5753/
 
 
-## spark.diemsg
+## DeathMessages - 更生动具体的死亡信息
 
-死亡转发插件
+来自[@Tsubasa6848](https://www.minebbs.com/members/tsubasa6848.39046/)的扩展，内置sparkAPI，丰富的死亡讯息（移植了java）以及自动转发群
 
-![](/store/diemsg.jpg)
+链接：https://www.minebbs.com/resources/deathmessages-java.4897/
 
-链接：https://www.minebbs.com/resources/spark-diemsg.5733/
+## Advancements - 还原Java版全部进度/成就系统
+
+来自[@Tsubasa6848](https://www.minebbs.com/members/tsubasa6848.39046/)的扩展，移植java几乎所有成就，内置sparkAPI，完成时自动转发群聊。
+
+链接：https://www.minebbs.com/resources/advancements-java.4949/
 
 ## spark.qbot
 
