@@ -38,8 +38,8 @@
 }
 ```
 
-### 使用oicq方案
-> [!WARNING] Oicq插件年久失修，若出现无法登陆，请使用gocq
+### 使用icqq方案
+> [!WARNING] icqq插件QQ协议更新较为不积极，若出现无法登陆，请使用gocq
 ``` json
 {
     "qq":{
@@ -49,7 +49,7 @@
         "platform":1  // 协议 1：手机 2：平板 3：手表
     },
     "adapter":{
-        "type":"oicq",  // 适配方式，默认oicq不需要更改
+        "type":"icqq",  // 适配方式，默认oicq不需要更改
         "target":"ws://somewhere:port"  // 不需要动此项，是go-cqhttp方案需要的
     }
 }
@@ -92,7 +92,7 @@
         "cmd":".执行",
         "query":"在线玩家"
     },
-    "group": 114514,  // 使用机器人发群号
+    "group": 114514,  // 机器人所生效群。目前只支持一个
     "admin": [],   // 管理员，是一个数组，可用添加多个
     "auto_wl": true,  // 是否在玩家绑定白名单之后直接执行allowlist add命令
     "debug":true,  // 是否显示调试信息
