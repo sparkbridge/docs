@@ -49,7 +49,7 @@
         "platform":1  // 协议 1：手机 2：平板 3：手表
     },
     "adapter":{
-        "type":"icqq",  // 适配方式，默认icqq
+        "type":"oicq",  // 适配方式，默认icqq（虽然写着oicq，不过已经是icqq了（
         "target":"ws://somewhere:port"  // 不需要动此项，是go-cqhttp方案需要的
     }
 }
