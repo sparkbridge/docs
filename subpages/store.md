@@ -34,6 +34,18 @@ BE/JE版服务器查询
 
 链接：https://www.minebbs.com/resources/spark-custmap-customgetmap.5765/
 
+## spark.betterchat
+
+更好的聊天转发
+支持：
+指定前缀群内容转发到服务器；
+自由更改发送信息样式
+自动导入spark.mc配置中的敏感词和字数限制（因此这部分请前往spark.mc修改）
+
+![](/store/betterchat.jpg)
+
+链接：https://www.minebbs.com/resources/spark-betterchat.5811/
+
 ## spark.os
 
 群内自助查询服务器状态
