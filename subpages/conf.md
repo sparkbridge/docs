@@ -99,9 +99,13 @@
     "msg":{
         "join":true,  // 是否显示玩家进入服务器
         "left":true,  // 是否显示玩家离开服务器
+        "inputLimit": 40, //输入字数限制
+        "outputLimit": 60, //输出字数限制
         "chat":true  // 是否显示玩家聊天
     }
-}
+    "prohibited": [
+        "傻逼"
+      ]}//敏感词检查，多个使用逗号分割
 ```
 
 ### spark.regex
