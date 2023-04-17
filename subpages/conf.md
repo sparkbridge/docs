@@ -45,7 +45,7 @@ message:
 
 
 //(中间省略）
-# 默认中间件锚点
+\# 默认中间件锚点
 
 default-middlewares: &default
   # 访问密钥, 强烈推荐在公网的服务器设置
@@ -55,12 +55,12 @@ default-middlewares: &default
 # 连接服务列表
 
 servers:
-  # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
-  #- http: # http 通信
-  #- ws:   # 正向 Websocket
-  #- ws-reverse: # 反向 Websocket
-  #- pprof: #性能分析服务器
-  # 正向WS设置
+  \# 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
+  \#- http: # http 通信
+  \#- ws:   # 正向 Websocket
+  \#- ws-reverse: # 反向 Websocket
+  \#- pprof: #性能分析服务器
+  \# 正向WS设置
   - ws:
       # 正向WS服务器监听地址
       address: somewhere:8080
