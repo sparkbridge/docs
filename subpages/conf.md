@@ -83,7 +83,6 @@ servers:
 proxy: ''
 bots: 
   114514: 
-
   //你的QQ
     cacheImage: false
     cacheRecord: false
@@ -92,7 +91,6 @@ bots:
       interval: 1500
 //中间省略
     ws: 
-
       enable: true
       postMessageFormat: array
       wsHost: 127.0.0.1
