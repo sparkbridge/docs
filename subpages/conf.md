@@ -39,8 +39,11 @@
 ```
 ### 使用Mirai
 1.下载Mirai
+
 2.你需要安装[OneBot Mirai](https://github.com/yyuueexxiinngg/onebot-kotlin)插件
+
 3.修改配置文件，开启正向ws服务器
+
 4.同上gocq第4,5步
 
 
