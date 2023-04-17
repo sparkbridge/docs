@@ -37,6 +37,12 @@
     }
 }
 ```
+### 使用Mirai
+1.下载Mirai
+2.你需要安装[OneBot Mirai](https://github.com/yyuueexxiinngg/onebot-kotlin)插件
+3.修改配置文件，开启正向ws服务器
+4.同上gocq第4,5步
+
 
 ### 使用icqq方案
 > [!WARNING] icqq插件QQ协议更新较为不积极，若出现无法登陆，请使用gocq
