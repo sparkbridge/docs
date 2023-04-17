@@ -71,7 +71,7 @@ servers:
 ```
 > [!WARNING] 请把第四步认真做完
 
-### 使用Mirai
+### 使用Mirai(adapter 写gocq即可)
 1.下载Mirai
 
 2.你需要安装[OneBot Mirai](https://github.com/yyuueexxiinngg/onebot-kotlin)插件
