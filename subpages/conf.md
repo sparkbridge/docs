@@ -35,7 +35,7 @@
 3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
 4. 在配置文件config.yml中填入账号和密码， __更改`post-format`为`array`__ ，修改`access-token`为你喜欢的密码
 5. 再次运行go-cqhttp以登录帐号
-``` config.yml
+``` yml
 //配置完成后应该是这样子的
 message:
 
@@ -43,7 +43,7 @@ message:
   # 可选: string,array
   post-format: array
 
-......
+
 //(中间省略）
 # 默认中间件锚点
 
@@ -51,7 +51,7 @@ default-middlewares: &default
   # 访问密钥, 强烈推荐在公网的服务器设置
   access-token: ''
   //密匙也要一样
-......
+//（中间省略）
 # 连接服务列表
 
 servers:
