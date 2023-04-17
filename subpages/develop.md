@@ -93,3 +93,6 @@ SparkBridge会在登录后自动加载。
 2. 如果您设置了一个`config.json`作为配置文件，请把它放到您插件文件夹的根目录，SparkBridge会在加载插件的时候在`plugins/sparkbridge/`创建插件同名文件夹，并把`config.json`转移到文件夹中，无需您手动转移。另外，SparkBridge还会自动创建`data`文件夹在`config,json`同级。
 3. 不要在主函数`onStart`之外的地方进行机器人相关操作，这时候还未登录。
 4. 如果遇到还未实现的操作，请您不要急躁，在我们进行合并API之前，您可以先自行实现。
+
+![事件](https://flowus.cn/sparkbridge/share/1722e4b9-f1d8-4259-b139-12ae0a6e1836)
+![API](https://flowus.cn/sparkbridge/share/0a87e4e8-7f63-4c36-a3f8-6e3655dafaf6)
