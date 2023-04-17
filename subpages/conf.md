@@ -45,7 +45,13 @@ message:
 
 ......
 //(中间省略）
+# 默认中间件锚点
 
+default-middlewares: &default
+  # 访问密钥, 强烈推荐在公网的服务器设置
+  access-token: ''
+  //密匙也要一样
+......
 # 连接服务列表
 
 servers:
@@ -92,7 +98,9 @@ bots:
       wsHost: 127.0.0.1
       wsPort: 8080
       //你的ip和端口，请一致
-      accessToken: ''```
+      accessToken: ''
+      //密匙
+```
 
 
 ### 使用icqq方案
