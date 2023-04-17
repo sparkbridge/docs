@@ -39,36 +39,37 @@
 //配置完成后应该是这样子的
 message:
 
-  \# 上报数据类型
-  \# 可选: string,array
+  // 上报数据类型
+  // 可选: string,array
   post-format: array
 
 
 //(中间省略）
-\# 默认中间件锚点
+// 默认中间件锚点
 
 default-middlewares: &default
-  \# 访问密钥, 强烈推荐在公网的服务器设置
+  // 访问密钥, 强烈推荐在公网的服务器设置
   access-token: ''
   //密匙也要一样
 //（中间省略）
-\# 连接服务列表
+// 连接服务列表
 
 servers:
-  \# 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
-  \#- http: # http 通信
-  \#- ws:   # 正向 Websocket
-  \#- ws-reverse: # 反向 Websocket
-  \#- pprof: #性能分析服务器
-  \# 正向WS设置
+  // 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
+  //- http: # http 通信
+  //- ws:   # 正向 Websocket
+  //- ws-reverse: # 反向 Websocket
+  //- pprof: #性能分析服务器
+  // 正向WS设置
   - ws:
-      \# 正向WS服务器监听地址
+      // 正向WS服务器监听地址
       address: somewhere:8080
       //填写的地址与端口
       middlewares:
         \<<: \*default \# 引用默认中间件
 
 ```
+
 > [!WARNING] 请把第四步认真做完
 
 ### 使用Mirai(adapter 写gocq即可)
