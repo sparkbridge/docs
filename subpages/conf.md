@@ -11,18 +11,6 @@
 ```
 ## 登录项配置文件
 打开`config.json`
-
-### 使用go-cqhttp方案
-
-> [!WARNING] 请连不上的同学自备科学上网软件
-
-1. 下载[最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
-2. 双击运行，首次运行时会释放启动文件
-3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
-4. 在配置文件中填入账号和密码， __更改`post-format`为`array`__ ，修改`access-token`为你喜欢的密码
-5. 再次运行go-cqhttp以登录帐号
-> [!WARNING] 请把第四步认真做完
-
 ``` json
 {
     "qq":{
@@ -37,14 +25,74 @@
     }
 }
 ```
+
+### 使用go-cqhttp方案
+
+> [!WARNING] 请连不上的同学自备科学上网软件
+
+1. 下载[最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
+2. 双击运行，首次运行时会释放启动文件
+3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
+4. 在配置文件config.yml中填入账号和密码， __更改`post-format`为`array`__ ，修改`access-token`为你喜欢的密码
+5. 再次运行go-cqhttp以登录帐号
+``` config.yml
+//配置完成后应该是这样子的
+message:
+
+  # 上报数据类型
+  # 可选: string,array
+  post-format: array
+
+......
+//(中间省略）
+
+# 连接服务列表
+
+servers:
+  # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
+  #- http: # http 通信
+  #- ws:   # 正向 Websocket
+  #- ws-reverse: # 反向 Websocket
+  #- pprof: #性能分析服务器
+  # 正向WS设置
+  - ws:
+      # 正向WS服务器监听地址
+      address: somewhere:8080
+      //填写的地址与端口
+      middlewares:
+        <<: *default # 引用默认中间件
+
+```
+> [!WARNING] 请把第四步认真做完
+
 ### 使用Mirai
 1.下载Mirai
 
 2.你需要安装[OneBot Mirai](https://github.com/yyuueexxiinngg/onebot-kotlin)插件
 
-3.修改配置文件，开启正向ws服务器
+3.修改配置文件（.\config\com.github.yyuueexxiinngg.onebot），开启正向ws服务器
 
 4.同上gocq第4,5步
+``` yml
+proxy: ''
+bots: 
+  114514: 
+
+  //你的QQ
+    cacheImage: false
+    cacheRecord: false
+    heartbeat: 
+      enable: false
+      interval: 1500
+//中间省略
+    ws: 
+
+      enable: true
+      postMessageFormat: array
+      wsHost: 127.0.0.1
+      wsPort: 8080
+      //你的ip和端口，请一致
+      accessToken: ''```
 
 
 ### 使用icqq方案
