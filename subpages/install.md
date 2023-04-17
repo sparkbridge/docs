@@ -26,9 +26,4 @@ git clone https://github.com/sparkbridge/sparkbridge.git
 
 clone结束后，开启BDS
 
-### GitHub Release
-
-在https://github.com/sparkbridge/sparkbridge/releases
-
-下载最新的Relase文件
 
