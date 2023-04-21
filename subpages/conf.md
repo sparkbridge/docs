@@ -29,6 +29,7 @@
 ### 使用go-cqhttp方案
 
 > [!WARNING] 请连不上的同学自备科学上网软件
+或者...进群下载吧
 
 1. 下载[最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
 2. 双击运行，首次运行时会释放启动文件
