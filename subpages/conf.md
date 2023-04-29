@@ -31,7 +31,7 @@
 > [!WARNING] 请连不上的同学自备科学上网软件
 
 1. 下载[github最新版本](https://github.com/Mrs4s/go-cqhttp/releases/latest)并解压
-（或[蓝奏云链接](https://danieltoyama.lanzouy.com/iBZby0tociyd)）
+（或[蓝奏云链接](https://danieltoyama.lanzouy.com/iSQbx0u7z2za)）
 2. 双击运行，首次运行时会释放启动文件
 3. 再次运行，当出现提示选择通信方式时，选择正向 Websocket 通信
 4. 在配置文件config.yml中填入账号和密码， __更改`post-format`为`array`__ ，修改`access-token`为你喜欢的密码
