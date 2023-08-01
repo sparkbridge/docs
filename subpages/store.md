@@ -1,5 +1,7 @@
 # 插件中心
 
+> [!WARNING] Sparkbridge2已推出，本文档所有内容不再更新，sb1不再接受支持
+
 >要是你也愿意为我们提供插件，欢迎来[仓库](https://github.com/sparkbridge/docs)提交Pull Request哦
 
 ## spark.rank

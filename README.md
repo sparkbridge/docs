@@ -1,5 +1,7 @@
 # SparkBridge
 
+> [!WARNING] Sparkbridge2已推出，本文档所有内容不再更新，sb1不再接受支持
+
 NilBridge原班人马耗时三个月为您带来全新的互通机器人方案，代号：✨SparkBridge✨
 
 对项目进行了完全的重写，适配icqq(内置)和go-cqhttp外部连接，对使用VPS和面板的服主都能提供很好的服务。

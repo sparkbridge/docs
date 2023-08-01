@@ -1,5 +1,7 @@
 # 配置文件详解
 
+> [!WARNING] Sparkbridge2已推出，本文档所有内容不再更新，sb1不再接受支持
+
 启动一次SparkBridge后，会在`plugin/sparkbridge/`文件夹生成配置文件
 
 ``` 

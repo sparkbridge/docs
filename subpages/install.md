@@ -1,4 +1,7 @@
 # 安装SparkBridge
+
+> [!WARNING] Sparkbridge2已推出，本文档所有内容不再更新，sb1不再接受支持
+
 我们有两种推荐的方式：
 ## 从Minebbs下载
 

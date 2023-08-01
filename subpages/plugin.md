@@ -1,5 +1,7 @@
 # 装载插件
 
+> [!WARNING] Sparkbridge2已推出，本文档所有内容不再更新，sb1不再接受支持
+
 通常下载下来的插件是zip文件，解压到文件夹后把文件夹放入到`plugins/nodejs/sparkbridge/plugins`文件夹。
 
 ![](./plugin/dir.png)
