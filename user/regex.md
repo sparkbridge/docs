@@ -79,7 +79,7 @@
 | run|  服务器执行命令   | run\|list |
 | t|  发送消息给服务器成员  | t\|Spark:你好|如果目标成员写all则会发给所有人|
 | addwl|  添加白名单 | addwl\|Spark:true|冒号后面的true和false控制是否自动添加白名单到服务器|
-|remwl|移除白名单|remwl|Spark|
+|remwl|移除白名单|remwl\|Spark|
 
 ## 占位符
 
