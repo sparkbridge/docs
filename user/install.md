@@ -35,4 +35,4 @@ SparkBridge🔗 https://www.minebbs.com/resources/sparkbridge-bot-qq.5480/
 
 待到控制台出现`[LeviLamina] sparkbridge2 已加载`的时候
 
-打开http://localhost:3002，如果一切正常，您将看到一个网页面板
+用浏览器打开本地3002端口，如果一切正常，您将看到一个网页面板
