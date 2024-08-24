@@ -11,7 +11,7 @@
 ``` js
 const configFile = spark.getFileHelper('example');
 
-configFile.init("config.josn",{
+configFile.init("config.json",{
     reply:true
 })
 

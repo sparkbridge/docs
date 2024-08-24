@@ -9,7 +9,7 @@ export default defineConfig({
     logo: '/static/spark.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '指南', link: '/user/install' },
+      { text: '指南', link: '/user/info' },
       { text: '开发参考', link: '/dev/setup' },
       { text: '关于我们', link: '/about/us' }
     ],
