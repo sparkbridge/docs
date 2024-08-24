@@ -22,7 +22,7 @@ Error: ENOENT: no such file or directory, open 'plugins\nodejs\sparkbridge2\plug
 
 ## 为什么我的 plugins 文件夹没有 nodejs 文件夹？
 
-LeviLaminav取消了nodejs文件夹，直接将插件放入plughins文件夹即可加载
+LeviLamina取消了nodejs文件夹，直接将插件放入plughins文件夹即可加载
 
 如果您仍在使用Liteloader，请确保版本需要大于 2.5.0。
 

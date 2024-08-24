@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  assetsDir:"static",
   title: "SparkBridge2",
   description: "all new Bridge",
   head: [['link', { rel: 'icon', href: 'https://sparkbridge.cn/static/spark.jpg' }]],
