@@ -4,66 +4,67 @@ outline: deep
 # 插件市场
 
 以下是我们精选的插件列表：
+
 <script setup>
 const products = [
   {
-    a: {
-      href: '/product1',
-      img: "https://s11.ax1x.com/2024/01/20/pFEXXY4.jpg",
-      desc: "商品1描述"
-    },
-    div: {
-      title: "商品1名称",
-      desc: "商品1简短描述，介绍商品的特点和优势。",
-      tag:{
-        official:"官方"
-      }
-    }
-  },{
-    a:{
-      href: "https://www.minebbs.com/resources/spark2-rank-q-sb.7886/",
-      img:"/static/rank2.jpg",
-      desc:"商品2描述"
-    },
-    div:{
-      title:"Spark2.rank",
-      desc:"Q群获取游戏内可视化统计数据，离线生成分享图",
-      tag:{
-        new:"新发布"
-      }
-    }
-  },{
-    a:{
-      href:"/product3",
-      img:"https://www.minebbs.com/data/resource_icons/8/8331.jpg?1716636530",
-      desc:"商品3描述"
-    },
-    div:{
-      title:"商品3名称",
-      desc:"商品2简短描述，介绍商品的特点和优势。",
-      tag:{
-        new:"新发布",
-        official:"官方"
-      }
-    }
+    url: '/product1',
+    image: '/static/spark.jpg',
+    title: '官方示例插件',
+    description: '基于开发文档编写的规范插件，可以作为插件模板',
+    tags: { official: '官方' }
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark2-rank-q-sb.7886/',
+    image: 'https://s21.ax1x.com/2024/08/23/pAFQnSJ.jpg',
+    title: 'Spark2.rank',
+    description: 'Q群获取游戏内可视化统计数据，离线生成分享图',
+    tags: {}
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-motd-java.5505/',
+    image: 'https://s21.ax1x.com/2024/08/23/pAFQUld.png',
+    title: 'Spark.motd',
+    description: '基岩/Java版服务器查询，不依赖任何api，稳定可靠的查询方式',
+    tags: {}
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-testvanish-1-2-0.9185/',
+    image: 'https://s21.ax1x.com/2024/08/24/pAF04FH.png',
+    title: 'spark.testVanish',
+    description: '让bot不再在您使用完全隐身时背刺您',
+    tags: { }
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-ban-q.8331/',
+    image: 'https://s21.ax1x.com/2024/08/24/pAF0aeU.jpg',
+    title: 'spark.ban',
+    description: '一个简单的Q群违禁词插件',
+    tags: {}
   }
-]
+];
 </script>
+
 <div class="product-grid">
-    <!-- 示例商品1 -->
-    <div class="product" v-for="({ a, div }, index) in products">
-      <a :href="a.href" class="product-image-link">
-        <img :src="a.img" :alt="a.desc" class="product-image">
-      </a>
-      <div class="product-info">
-        <span v-for="(value,key) in div.tag" :class="'tag '+key+'-tag'">{{value}}</span>
-        <h3 class="product-title">{{ div.title }}</h3>
-        <p class="product-description">{{ div.desc }}</p>
-      </div>
+
+  <div class="product" v-for="product in products" :key="product.url">
+    <a :href="product.url" class="product-image-link">
+      <img :src="product.image" class="product-image">
+    </a>
+    <div class="product-info">
+      <!-- 检查是否存在标签并渲染它们 -->
+      <!-- <span v-for="(value, key) in product.tags" :key="key" :class="key">{{ value }}</span> -->
+      <div v-for="(value, key) in product.tags" :key="key">
+    <span :class="'tag ' + key + '-tag'">{{ value }}</span>
+  </div>
+      <h3 class="product-title">{{ product.title }}</h3>
+      <p class="product-description">{{ product.description }}</p>
     </div>
+  </div>
 </div>
 
 <style>
+
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -139,4 +140,14 @@ const products = [
 .new-tag {
   background-color: #2196F3;
 }
+
+.tool-tag {
+  background-color: #2196F3; 
+}
+
+
+.sale-tag {
+  background-color: #f44336; 
+}
+
 </style>

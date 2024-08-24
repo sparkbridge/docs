@@ -11,22 +11,24 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/user/install' },
-      { text: '开发参考', link: '/dev/api' },
+      { text: '开发参考', link: '/dev/setup' },
       { text: '关于我们', link: '/about/us' }
     ],
 
     sidebar: {
       '/user/': [
         {
-          text: '简介',
+          text: '指南',
           collapsed: false,
           items: [
             { text: '什么是SparkBridge？', link: '/user/info' },
             { text: '快速开始', link: '/user/install' },
             { text: '配置项参考', link: '/user/conf' },
             { text: '主要功能', link: '/user/func' },
+            {text :"正则表达式",link:"/user/regex"},
             { text: '常见问题', link: '/user/prob' },
-            { text: '插件市场', link: '/user/store' }
+            { text: '插件市场', link: '/user/store' },
+
           ]
         }
       ],
@@ -36,7 +38,18 @@ export default defineConfig({
         {
           text: '开发参考',
           items: [
-            { text: 'Index', link: '/dev/api' }
+            { text: '环境部署', link: '/dev/setup' },
+            { text: '沙箱模式', link: '/dev/sandbox' },
+            {text :"文件结构",link:"/dev/structure"},
+            {text :"插件入口",link:"/dev/maingate"},
+            {text :"监听器",link:"/dev/listener"},
+            {text :"文件系统",link:"/dev/file"},
+            {text :"Log记录器",link:"/dev/logger"},
+            {text :"CQ客户端API",link:"/dev/qc_api"},
+            {text :"占位符",link:"/dev/placeholder"},
+            {text :"事件系统",link:"/dev/event"},
+            {text :"spark类",link:"/dev/spark"},
+            {text :"导出api",link:"/dev/ex_api"},
           ]
         }
       ],
