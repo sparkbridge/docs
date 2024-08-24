@@ -18,4 +18,4 @@
 
 ## 开启方法
 
-只需要在node_modules已安装的情况下，使用根目录的sanbox.bat即可开启沙箱模式
+只需要在node_modules已安装的情况下，使用根目录的sandbox.bat即可开启沙箱模式
