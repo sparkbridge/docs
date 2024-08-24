@@ -6,7 +6,7 @@ hero:
   name: "SparkBridge2"
   text: "✨使用Onebot协议的BDS机器人适配器✨"
   image:
-    src: ./static/spark.png
+    src: /spark.png
     alt: VitePress
   tagline: "all new Bridge"
   actions:
@@ -15,7 +15,7 @@ hero:
       link: /user/install
     - theme: alt
       text: 开发文档
-      link: /dev/api
+      link: /dev/setup
     - theme: alt
       text: GitHub
       link: https://github.com/sparkbridge

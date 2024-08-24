@@ -9,7 +9,7 @@ outline: deep
 const products = [
   {
     url: '/product1',
-    image: '/static/spark.jpg',
+    image: '/spark.jpg',
     title: '官方示例插件',
     description: '基于开发文档编写的规范插件，可以作为插件模板',
     tags: { official: '官方' }

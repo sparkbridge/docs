@@ -2,4 +2,4 @@
 
 此部分内容，请查看网页面板
 
-![](/static/boot.gif)
+![](/boot.gif)
