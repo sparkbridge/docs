@@ -52,11 +52,6 @@ configFile.updateFile('config.json',local_config,json5);
 
 这样我们就完成了更新配置文件的操作。
 
-::: warning 注意
-SparkBridge并未附带json5，请开发者自行打包进插件
-:::
-
-
 ## 网页配置面板
 
 在SparkBride 2.4.0时引入了`telemetry`插件，此插件可以生成网页面板来编辑配置文件，大幅度降低文件修改的难度
