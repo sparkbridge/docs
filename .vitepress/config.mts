@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SparkBridge2",
   description: "all new Bridge",
-  base:"/docs",
   head: [['link', { rel: 'icon', href: 'https://sparkbridge.cn/static/spark.jpg' }]],
   themeConfig: {
     logo: '/static/spark.jpg',

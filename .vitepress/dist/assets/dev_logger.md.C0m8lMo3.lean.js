@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a4 as t}from"./chunks/framework.CeWJkJk4.js";const c=JSON.parse('{"title":"日志记录器","description":"","frontmatter":{},"headers":[],"relativePath":"dev/logger.md","filePath":"dev/logger.md"}'),n={name:"dev/logger.md"},e=t("",3),l=[e];function h(p,k,r,E,d,o){return a(),i("div",null,l)}const _=s(n,[["render",h]]);export{c as __pageData,_ as default};

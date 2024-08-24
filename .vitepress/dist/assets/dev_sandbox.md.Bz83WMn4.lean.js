@@ -1,1 +1,0 @@
-import{_ as a,c as s,o as e,a4 as n}from"./chunks/framework.CeWJkJk4.js";const u=JSON.parse('{"title":"沙箱模式","description":"","frontmatter":{},"headers":[],"relativePath":"dev/sandbox.md","filePath":"dev/sandbox.md"}'),t={name:"dev/sandbox.md"},p=n("",7),o=[p];function d(r,i,c,l,_,b){return e(),s("div",null,o)}const k=a(t,[["render",d]]);export{u as __pageData,k as default};
