@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as t}from"./chunks/framework.CeWJkJk4.js";const g=JSON.parse('{"title":"事件系统","description":"","frontmatter":{},"headers":[],"relativePath":"dev/event.md","filePath":"dev/event.md"}'),e={name:"dev/event.md"},n=t("",6),p=[n];function h(l,k,d,E,r,o){return a(),i("div",null,p)}const _=s(e,[["render",h]]);export{g as __pageData,_ as default};

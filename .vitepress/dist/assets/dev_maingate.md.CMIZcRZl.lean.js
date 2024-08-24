@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.CeWJkJk4.js";const y=JSON.parse('{"title":"插件入口","description":"","frontmatter":{},"headers":[],"relativePath":"dev/maingate.md","filePath":"dev/maingate.md"}'),h={name:"dev/maingate.md"},l=n("",10),k=[l];function p(t,e,E,r,d,g){return a(),i("div",null,k)}const o=s(h,[["render",p]]);export{y as __pageData,o as default};

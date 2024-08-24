@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a4 as n}from"./chunks/framework.CeWJkJk4.js";const g=JSON.parse('{"title":"文件系统","description":"","frontmatter":{},"headers":[],"relativePath":"dev/file.md","filePath":"dev/file.md"}'),e={name:"dev/file.md"},l=n("",21),t=[l];function p(h,k,d,r,o,c){return a(),i("div",null,t)}const F=s(e,[["render",p]]);export{g as __pageData,F as default};

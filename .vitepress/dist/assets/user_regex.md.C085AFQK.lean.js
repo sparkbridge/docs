@@ -1,0 +1,1 @@
+import{_ as s,c as t,o as i,a4 as a}from"./chunks/framework.CeWJkJk4.js";const c=JSON.parse('{"title":"正则表达式","description":"","frontmatter":{},"headers":[],"relativePath":"user/regex.md","filePath":"user/regex.md"}'),n={name:"user/regex.md"},e=a("",19),l=[e];function h(p,k,d,r,E,g){return i(),t("div",null,l)}const y=s(n,[["render",h]]);export{c as __pageData,y as default};

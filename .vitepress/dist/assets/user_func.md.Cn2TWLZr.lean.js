@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as i,a4 as s}from"./chunks/framework.CeWJkJk4.js";const p=JSON.parse('{"title":"主要功能","description":"","frontmatter":{},"headers":[],"relativePath":"user/func.md","filePath":"user/func.md"}'),d={name:"user/func.md"},l=s("",16),c=[l];function r(t,o,v,u,n,b){return i(),e("div",null,c)}const _=a(d,[["render",r]]);export{p as __pageData,_ as default};

@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a4 as r}from"./chunks/framework.CeWJkJk4.js";const f=JSON.parse('{"title":"监听器","description":"","frontmatter":{},"headers":[],"relativePath":"dev/listener.md","filePath":"dev/listener.md"}'),d={name:"dev/listener.md"},n=r("",6),s=[n];function o(i,l,c,_,p,h){return a(),e("div",null,s)}const g=t(d,[["render",o]]);export{f as __pageData,g as default};
