@@ -43,6 +43,7 @@ export default defineConfig({
             {text :"插件入口",link:"/dev/maingate"},
             {text :"监听器",link:"/dev/listener"},
             {text :"文件系统",link:"/dev/file"},
+            {text :"网页配置面板",link:"/dev/webpanel"},
             {text :"Log记录器",link:"/dev/logger"},
             {text :"CQ客户端API",link:"/dev/qc_api"},
             {text :"占位符",link:"/dev/placeholder"},
