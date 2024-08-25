@@ -11,7 +11,7 @@ outline: deep
 > [!CAUTION] 注意
 > 这篇安装指南适用于SparkBridge作为LeviLamina插件而加载的情况。
 
- - [LeviLaminav](https://github.com/LiteLDev/LeviLamina) 
+ - [LeviLamina](https://github.com/LiteLDev/LeviLamina) 
  - 与[LeviLamina](https://github.com/LiteLDev/LeviLamina)相匹配版本的[Bedrock Dedicated Server](https://www.minecraft.net/zh-hans/download/server/bedrock)
  - 安装有与[LeviLamina](https://github.com/LiteLDev/LeviLamina)相匹配版本的[LegacyScriptEngine](https://github.com/LiteLDev/LegacyScriptEngine)
  - 安装有与[LegacyScriptEngine](https://github.com/LiteLDev/LegacyScriptEngine)相匹配版本的[legacy-script-engine-nodejs](https://github.com/LiteLDev/LegacyScriptEngine)
