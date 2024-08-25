@@ -35,15 +35,21 @@ spark.on("event.telemetry.updateconfig_example",(plname,K,newV)=>{
 ``` js
 const  WebConfigBuilder   = spark.telemetry.WebConfigBuilder;
 
-let wbc = new WebConfigBuilder("example"); //插件名称
+let wbc = new WebConfigBuilder("example"); 
+//插件名称
 
-wbc.addEditArray("配置项名称",["配置1","配置2"],"配置描述");  // 添加一个可编辑数组
+wbc.addEditArray("配置项名称",["配置1","配置2"],"配置描述"); 
+// 添加一个可编辑数组
 
-wbc.addChoosing("配置项名称",["选项1","选项2","选项3"],0,"配置描述"); // 添加一个可选择数组，第三个参数为当前所选
+wbc.addChoosing("配置项名称",["选项1","选项2","选项3"],0,"配置描述");
+// 添加一个可选择数组，第三个参数为当前所选
 
-wbc.addSwitch("配置项名称",true,"配置描述"); //添加一个开关，此项返回true/false
+wbc.addSwitch("配置项名称",true,"配置描述"); 
+//添加一个开关，此项返回true/false
 
-wbc.addText("配置项名称","配置值","配置描述"); //添加一个可编辑文本
+wbc.addText("配置项名称","配置值","配置描述"); 
+//添加一个可编辑文本
 
-wbc.addNumber("配置项名称",114514,"配置描述"); // 添加一个可编辑数值
+wbc.addNumber("配置项名称",114514,"配置描述"); 
+// 添加一个可编辑数值
 ```
