@@ -14,6 +14,8 @@ const  WebConfigBuilder   = spark.telemetry.WebConfigBuilder;
 let wbc = new WebConfigBuilder("example");
 wbc.addEditArray('admins',config.admins,'管理员列表');
 wbc.addNumber("group",config.group,'监听的群聊');
+
+// 把配置文件推送到telemetry
 spark.emit("event.telemetry.pushconfig", wbc);
 
 ```
