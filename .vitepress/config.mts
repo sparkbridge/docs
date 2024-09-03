@@ -11,7 +11,8 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/user/info' },
       { text: '开发参考', link: '/dev/setup' },
-      { text: '关于我们', link: '/about/us' }
+      { text: '关于我们', link: '/about/us' },
+      {text:'solidworks', link: '/sw/index'}
     ],
 
     sidebar: {
@@ -61,6 +62,15 @@ export default defineConfig({
           items: [
             { text: '本项目', link: '/about/us' },
             { text: '开发者们', link: '/about/devs' }
+          ]
+        }
+      ],
+      '/sw/': [
+        {
+          text: '关于',
+          items: [
+            { text: '基本操作', link: '/sw/index' },
+            { text: '草图，特征与模块应用', link: '/about/ct' }
           ]
         }
       ]
