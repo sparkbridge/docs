@@ -70,7 +70,7 @@ export default defineConfig({
           text: '关于',
           items: [
             { text: '基本操作', link: '/sw/index' },
-            { text: '草图，特征与模块应用', link: '/about/ct' }
+            { text: '草图，特征与模块应用', link: '/sw/ct' }
           ]
         }
       ]
