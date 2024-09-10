@@ -25,6 +25,15 @@ const local_config =json.parse(configFile.getFile("config.json"));
 
 SparkBridge会使用这套模板作为初始配置文件进行写入。初始化时如果文件已经存在，框架会自动检测文件和模板的差异,并且补全缺失的配置项。
 
+如果你出于某些原因不希望自动补全缺少项目，你可以在initFile函数添加第三个参数: autoUpdate = true。这样框架会忽略所有的改动。
+
+``` js
+configFile.initFile("config.json",{
+    reply:true
+},false) //在这里忽略了自动更新配置项
+
+```
+
 在这个步骤SparkBridge不会提供解析好的json文件，需要开发者自行解析。因为json与json5的配置文件互不通用，SparkBridge不知道目标文件使用什么格式储存。
 ## 读取二进制流
 
