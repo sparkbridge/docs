@@ -23,9 +23,9 @@ const local_config =json.parse(configFile.getFile("config.json"));
 
 所有从configFile初始化的文件，都会存储在`example`文件夹中。
 
-SparkBridge会使用这套模板作为初始配置文件进行写入。初始化时如果文件已经存在，不会覆盖。
+SparkBridge会使用这套模板作为初始配置文件进行写入。初始化时如果文件已经存在，框架会自动检测文件和模板的差异,并且补全缺失的配置项。
 
-在这个步骤SparkBridge不会提供解析好的json文件，需要开发者自行解析。因为json与josn5的配置文件互不通用，SparkBridge不知道目标文件使用什么格式储存。
+在这个步骤SparkBridge不会提供解析好的json文件，需要开发者自行解析。因为json与json5的配置文件互不通用，SparkBridge不知道目标文件使用什么格式储存。
 ## 读取二进制流
 
 如果我们想读取二进制文件，该怎么办呢。
