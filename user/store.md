@@ -45,6 +45,13 @@ const products = [
     title: 'spark.ban',
     description: '一个简单的Q群违禁词插件',
     tags: {}
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-regexessentials.5838/',
+    image: 'https://s21.ax1x.com/2024/08/28/pAApfje.png',
+    title: 'spark.RegexEssentials',
+    description: '为群聊提供更多的正则基础功能',
+    tags: {}
   }
 ];
 </script>
