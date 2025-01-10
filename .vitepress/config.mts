@@ -40,6 +40,7 @@ export default defineConfig({
           items: [
             { text: '环境部署', link: '/dev/setup' },
             { text: '沙箱模式', link: '/dev/sandbox' },
+            {text :"开发工具",link:"/dev/tools"},
             {text :"文件结构",link:"/dev/structure"},
             {text :"插件入口",link:"/dev/maingate"},
             {text :"监听器",link:"/dev/listener"},
