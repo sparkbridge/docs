@@ -24,7 +24,7 @@ LeviLaminav🔗 https://www.minebbs.com/resources/levilamina.8049/
 
 LiteLoaderNTQQ🔗  https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases
 
-LiteLoaderNTQQ快速安装工具🔗 https://github.com/Mzdyl/LiteLoaderQQNT_Install/release
+LiteLoaderNTQQ快速安装工具🔗 https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases
 
 LLOneBot🔗 https://github.com/LLOneBot/LLOneBot/releases
 
