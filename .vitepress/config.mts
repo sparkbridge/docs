@@ -11,8 +11,7 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/user/info' },
       { text: '开发参考', link: '/dev/setup' },
-      { text: '关于我们', link: '/about/us' },
-      {text:'solidworks', link: '/sw/index'}
+      { text: '关于我们', link: '/about/us' }
     ],
 
     sidebar: {
@@ -25,7 +24,7 @@ export default defineConfig({
             { text: '快速开始', link: '/user/install' },
             { text: '配置项参考', link: '/user/conf' },
             { text: '主要功能', link: '/user/func' },
-            {text :"正则表达式",link:"/user/regex"},
+            { text: "正则表达式", link: "/user/regex" },
             { text: '常见问题', link: '/user/prob' },
             { text: '插件市场', link: '/user/store' },
 
@@ -40,38 +39,29 @@ export default defineConfig({
           items: [
             { text: '环境部署', link: '/dev/setup' },
             { text: '沙箱模式', link: '/dev/sandbox' },
-            {text :"开发工具",link:"/dev/tools"},
-            {text :"文件结构",link:"/dev/structure"},
-            {text :"插件入口",link:"/dev/maingate"},
-            {text :"监听器",link:"/dev/listener"},
-            {text :"文件系统",link:"/dev/file"},
-            {text :"网页配置面板",link:"/dev/webpanel"},
-            {text :"Log记录器",link:"/dev/logger"},
-            {text :"CQ客户端API",link:"/dev/qc_api"},
-            {text :"占位符",link:"/dev/placeholder"},
-            {text :"事件系统",link:"/dev/event"},
-            {text :"spark类",link:"/dev/spark"},
-            {text :"导出api",link:"/dev/ex_api"},
+            { text: "开发工具", link: "/dev/tools" },
+            { text: "文件结构", link: "/dev/structure" },
+            { text: "插件入口", link: "/dev/maingate" },
+            { text: "监听器", link: "/dev/listener" },
+            { text: "文件系统", link: "/dev/file" },
+            { text: "网页配置面板", link: "/dev/webpanel" },
+            { text: "Log记录器", link: "/dev/logger" },
+            { text: "CQ客户端API", link: "/dev/qc_api" },
+            { text: "占位符", link: "/dev/placeholder" },
+            { text: "事件系统", link: "/dev/event" },
+            { text: "spark类", link: "/dev/spark" },
+            { text: "导出api", link: "/dev/ex_api" },
           ]
         }
       ],
 
-       // 当用户位于 `config` 目录时，会显示此侧边栏
-       '/about/': [
+      // 当用户位于 `config` 目录时，会显示此侧边栏
+      '/about/': [
         {
           text: '关于',
           items: [
             { text: '本项目', link: '/about/us' },
             { text: '开发者们', link: '/about/devs' }
-          ]
-        }
-      ],
-      '/sw/': [
-        {
-          text: '关于',
-          items: [
-            { text: '基本操作', link: '/sw/index' },
-            { text: '草图，特征与模块应用', link: '/sw/ct' }
           ]
         }
       ]
