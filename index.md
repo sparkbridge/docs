@@ -70,7 +70,7 @@ features:
     </div>
     <div class="sponsor">
         <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="sparkbridge.cn/support1.gif" alt="赞助者头像" class="sponsor-avatar">
+            <img src="https://sparkbridge.cn/support1.gif" alt="赞助者头像" class="sponsor-avatar">
         </a>
         <div>
             <div class="sponsor-name">NeosRain</div>
