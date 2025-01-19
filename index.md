@@ -68,6 +68,15 @@ features:
             <div class="sponsor-message">晴天服务器欢迎您的加入</div>
         </div>
     </div>
+    <div class="sponsor">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="sparkbridge.cn/support1.gif" alt="赞助者头像" class="sponsor-avatar">
+        </a>
+        <div>
+            <div class="sponsor-name">NeosRain</div>
+            <div class="sponsor-message">想杀了微软TMD WindowsApps</div>
+        </div>
+    </div>
     <!-- 更多赞助者内容 -->
 </div>
 
