@@ -6,7 +6,7 @@ export default defineConfig({
   description: "all new Bridge",
   // head: [['link', { rel: 'icon', href: 'https://sparkbridge.cn/spark.jpg' }]],
   themeConfig: {
-    logo: '/static/spark.jpg',
+    logo: '/spark.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/user/info' },

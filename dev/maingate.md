@@ -27,81 +27,28 @@ spark.on('message.group.normal', (e, reply) => {
 
 好的，现在我们启动BDS主程序或者沙箱。如果一切正常，就会收到BOT在上线时发送的“我来啦”。
 
-<div class="dialogue">
-  
-  <!-- 用户1 发言 -->
-  <div class="bubble user-1">我来啦</div>
-  <div class="clear"></div>
-</div>
+<ClientOnly>
+  <ChatBubble :messages="[
+    { userClass: 'user-1', text: '我来啦' }
+  ]" />
+</ClientOnly> 
 
 现在，在群聊中发送程序里设定的语句，观察BOT的反应。
 
-<div class="dialogue">
-  
-  <!-- 用户2 发言 -->
-  <div class="bubble user-2">你好吗</div>
-  <div class="clear"></div>
+<ClientOnly>
+  <ChatBubble :messages="[
+    { userClass: 'user-2', text: '你好吗' },
+    { userClass: 'user-1', text: '我很好，谢谢' }
+  ]" />
+</ClientOnly> 
 
-  <!-- 用户1 发言 -->
-  <div class="bubble user-1">我很好，谢谢</div>
-  <div class="clear"></div>
-</div>
+<ClientOnly>
+  <ChatBubble :messages="[
+    { userClass: 'user-2', text: '可爱捏' },
+    { userClass: 'user-1', img: 'https://s11.ax1x.com/2022/04/18/Lare4s.jpg' }
+  ]" />
+</ClientOnly> 
 
-
-<div class="dialogue">
-  
-  <!-- 用户2 发言 -->
-  <div class="bubble user-2">可爱捏</div>
-  <div class="clear"></div>
-
-  <!-- 用户1 发言 -->
-  <div class="bubble user-1"><img src="https://s11.ax1x.com/2022/04/18/Lare4s.jpg"></div>
-  <div class="clear"></div>
-</div>
-
-
-
-<style>
-    .dialogue {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .bubble {
-      position: relative;
-      margin-bottom: 10px;
-      padding: 12px;
-      border-radius: 18px;
-      font-size: 1em;
-      background-color: transparent; /* 背景设为透明 */
-      border: 1px solid #ddd; /* 添加边框以增加可见性 */
-      word-wrap: break-word; /* 确保文本可以换行 */
-    }
-
-    .bubble.user-1 {
-      float: left;
-      color: #555; /* 可以为不同用户设置不同的文本颜色 */
-    }
-
-    .bubble.user-2 {
-      float: right;
-      color: #333; /* 可以为不同用户设置不同的文本颜色 */
-    }
-
-    .bubble::before {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: transparent;
-    }
-
-    .clear {
-      clear: both;
-    }
-  </style>
+<script setup>
+import ChatBubble from '../.vitepress/components/ChatBubble.vue';
+</script>

@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="dialogue">
     <div
@@ -5,13 +7,14 @@
       :key="index"
     >
       <div class="bubble" :class="message.userClass">
-        {{ message.text }}
+        <!-- 判断是否为图片 -->
+        <img v-if="message.img" :src="message.img" alt="Message Image" />
+        <span v-else>{{ message.text }}</span>
       </div>
       <div class="clear"></div>
     </div>
   </div>
 </template>
-
 
 <script setup>
 import { defineProps } from 'vue';

@@ -14,7 +14,9 @@
     { userClass: 'user-2', text: '获取密码' },
     { userClass: 'user-1', text: '您的临时密码为：N0ZyfkJ0Q0Kl' }
   ]" />
-</ClientOnly>
+</ClientOnly> 
+
+
 
 <script setup>
 import ChatBubble from '../.vitepress/components/ChatBubble.vue';
