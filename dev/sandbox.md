@@ -18,4 +18,12 @@
 
 ## 开启方法
 
-只需要在node_modules已安装的情况下，使用根目录的sandbox.bat即可开启沙箱模式
+首先，安装NodeJS环境，根据平台类型选择文件
+
+[NodeJS中文下载站](https://nodejs.cn/download/)
+
+安装完成之后，在Release下载最新的SparkBridge
+
+[SparkBridge Release](https://github.com/sparkbridge/sparkbridge2/releases)
+
+下载解压之后，打开文件夹，运行sandbox.bat即可开启沙箱模式
