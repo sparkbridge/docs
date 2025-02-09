@@ -8,28 +8,28 @@ outline: deep
 
 ## 功能列表
 
-- [spark.QClient.sendGroupMsg](#sparkQClientsendgroupmsg): 发送群组消息。
-- [spark.QClient.sendPrivateMsg](#sparkQClientsendPrivateMsg): 发送私聊消息。
-- [spark.QClient.sendGroupForwardMsg](#sparkQClientsendGroupForwardMsg): 发送群组转发消息。
-- [spark.QClient.sendGroupBan](#sparkQClientsendGroupBan): 设置群组成员禁言。
-- [spark.QClient.deleteMsg](#sparkQClientdeleteMsg): 删除消息。
-- [spark.QClient.getGroupMemberList](#sparkQClientgetGroupMemberList): 获取群组成员列表。
-- [spark.QClient.getGroupMemberInfo](#sparkQClientgetGroupMemberInfo): 获取群组成员信息。
-- [spark.QClient.setGroupAddRequest](#sparkQClientsetGroupAddRequest): 处理群组添加请求。
-- [spark.QClient.setFriendAddRequest](#sparkQClientsetFriendAddRequest): 处理好友添加请求。
-- [spark.QClient.sendLike](#sparkQClientsengLike): 发送点赞消息。
-- [spark.QClient.getMsg](#sparkQClientgetMsg): 获取消息。
-- [spark.QClient.sendGroupWholeBan](#sparkQClientsengGroupWholeBan): 设置群组全体禁言。
-- [spark.QClient.setGroupKick](#sparkQClientsetGroupKick): 将成员移出群组。
-- [spark.QClient.setGroupLeave](#sparkQClientsetGroupLeave): 退出或解散群组。
-- [spark.QClient.setGroupName](#sparkQClientsetGroupName): 设置群组名称。
-- [spark.QClient.getStrangerInfo](#sparkQClientgetStrangerInfo): 获取陌生人信息。
-- [spark.QClient.getFriendInfo](#sparkQClientgetFriendInfo): 获取好友信息。
-- [spark.QClient.getGroupInfo](#sparkQClientgetGroupInfo): 获取群组信息。
-- [spark.QClient.getFriendList](#sparkQClientgetFriendList): 获取好友列表。
-- [spark.QClient.getGroupList](#sparkQClientgetGroupList): 获取群组列表。
-- [spark.QClient.getGroupHonorInfo](#sparkQClientgetGroupHonorInfo): 获取群组荣誉信息。
-- [spark.QClient.getStatus](#sparkQClientgetStatus): 获取客户端状态。
+- [spark.QClient.sendGroupMsg](#spark-qclient-sendgroupmsg): 发送群组消息。
+- [spark.QClient.sendPrivateMsg](#spark-qclient-sendprivatemsg): 发送私聊消息。
+- [spark.QClient.sendGroupForwardMsg](#spark-qclient-sendgroupforwardmsg): 发送群组转发消息。
+- [spark.QClient.sendGroupBan](#spark-qclient-sendgroupban): 设置群组成员禁言。
+- [spark.QClient.deleteMsg](#spark-qclient-deletemsg): 删除消息。
+- [spark.QClient.getGroupMemberList](#spark-qclient-getgroupmemberlist): 获取群组成员列表。
+- [spark.QClient.getGroupMemberInfo](#spark-qclient-getgroupmemberinfo): 获取群组成员信息。
+- [spark.QClient.setGroupAddRequest](#spark-qclient-setgroupaddrequest): 处理群组添加请求。
+- [spark.QClient.setFriendAddRequest](#spark-qclient-setfriendaddrequest): 处理好友添加请求。
+- [spark.QClient.sendLike](#spark-qclient-sendlike): 发送点赞消息。
+- [spark.QClient.getMsg](#spark-qclient-getmsg): 获取消息。
+- [spark.QClient.sendGroupWholeBan](#spark-qclient-sendgroupwholeban): 设置群组全体禁言。
+- [spark.QClient.setGroupKick](#spark-qclient-setgroupkick): 将成员移出群组。
+- [spark.QClient.setGroupLeave](#spark-qclient-setgroupleave): 退出或解散群组。
+- [spark.QClient.setGroupName](#spark-qclient-setgroupname): 设置群组名称。
+- [spark.QClient.getStrangerInfo](#spark-qclient-getstrangerinfo): 获取陌生人信息。
+- [spark.QClient.getFriendInfo](#spark-qclient-getfriendinfo): 获取好友信息。
+- [spark.QClient.getGroupInfo](#spark-qclient-getgroupinfo): 获取群组信息。
+- [spark.QClient.getFriendList](#spark-qclient-getfriendlist): 获取好友列表。
+- [spark.QClient.getGroupList](#spark-qclient-getgrouplist): 获取群组列表。
+- [spark.QClient.getGroupHonorInfo](#spark-qclient-getgrouphonorinfo): 获取群组荣誉信息。
+- [spark.QClient.getStatus](#spark-qclient-getstatus): 获取客户端状态。
 
 ### `spark.QClient.sendGroupMsg`
 **描述:**
