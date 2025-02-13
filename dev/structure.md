@@ -28,6 +28,7 @@ SparkBridge的插件结构并不复杂，需要有一个自述文件，和一个
         1
     ],//写上版本号
     "desc": "这是一个示例插件", //插件的自述，不过这并不会显示在bds的控制台中
+    "loadmode":"hybrid", // 插件在什么模式下加载，分为hybrid，offline和bds
     "load":true //是否启用此插件，保持默认即可
 }
 
