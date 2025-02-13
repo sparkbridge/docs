@@ -65,7 +65,7 @@ features:
         </a>
         <div>
             <div class="sponsor-name">故渊</div>
-            <div class="sponsor-message">晴天服务器欢迎您的加入</div>
+            <div class="sponsor-message">低价游戏云出,官网:https://ai2019.com/aff/DMVBWDCX</div>
         </div>
     </div>
     <div class="sponsor">
