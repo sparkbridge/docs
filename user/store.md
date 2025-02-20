@@ -45,6 +45,20 @@ const products = [
     title: 'spark.ban',
     description: '一个简单的Q群违禁词插件',
     tags: {}
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-niuzi.10490/',
+    image: 'https://s21.ax1x.com/2025/02/03/pEZIGM8.png',
+    title: 'spark.niuzi',
+    description: '牛子养成系统',
+    tags: {sale:"热门"}
+  },
+  {
+    url: 'https://www.minebbs.com/resources/spark-regexessentials.5838/',
+    image: 'https://s21.ax1x.com/2025/02/20/pEQYeAO.webp',
+    title: 'spark.regexessentials',
+    description: '正则基础插件',
+    tags: {sale:"热门"}
   }
 ];
 </script>
