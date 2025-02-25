@@ -12,7 +12,7 @@ outline: deep
 <script setup>
 const products = [
   {
-    url: '/product1',
+    url: 'https://github.com/sparkbridge/example',
     image: '/spark.jpg',
     title: '官方示例插件',
     description: '基于开发文档编写的规范插件，可以作为插件模板',

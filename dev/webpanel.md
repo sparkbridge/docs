@@ -53,11 +53,17 @@ wbc.addText("配置项名称","配置值","配置描述");
 wbc.addNumber("配置项名称",114514,"配置描述"); 
 // 添加一个可编辑数值
 
-wbc.addButton("配置项名称",()=>{
+wbc.addButtom("按钮跳转", () => {
     console.log("按钮被点击");
-    retun {
-        status : 200, // 不是200均为执行失败
-        message : "按钮被点击"
+    return {
+        status: 303, // 跳转状态码为303
+        url: "http://sparkbridge.cn"
     }
-},"配置项描述");
+}, "配置项描述");
+
+wbc.addButtom("按钮弹窗", () => {
+    return { 
+        status: 200, //按钮状态码为200
+        message: `<i>斜体</i><br><u>下划线</u><br><a href="https://sparkbridge.cn/">链接</a>  ` }
+}, "前往官方网站 sparkbridge.cn");
 ```
