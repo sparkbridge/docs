@@ -29,9 +29,6 @@ getFileHelper返回文件帮助类，详见[文件系统](/dev/file.md)
 
 ##  setOwnProperty
 
-``` js 
-spark.getFileHelper("plugin_name",{})
-```
 
 setOwnProperty可以在spark上挂载插件自定义的属性，使得插件互相联动成为可能。
 
