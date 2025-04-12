@@ -36,7 +36,13 @@ SparkBridge的插件结构并不复杂，需要有一个自述文件，和一个
 
 ```
 
+## 插件权限列表
 
+|权限等级|可以获取的模块|
+|:-:|:-:|
+|nor|`console`,`spark`,`setInterval`,`clearTimeout`|
+|key|`console`,`spark`,`setInterval`,`clearTimeout`,`ll`,`mc`,`require`|
+|core|`global`|
 
 ::: warning 注意
 自述文件中不应出现注释，在这里写注释是为了让您了解每个项的含义
