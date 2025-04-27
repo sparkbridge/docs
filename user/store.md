@@ -59,6 +59,13 @@ const products = [
     title: 'spark.regexessentials',
     description: '正则基础插件',
     tags: {sale:"热门"}
+  },
+  {
+    url:'https://minebbs.com/resources/spark-music-q.10475/',
+    image:'https://s21.ax1x.com/2025/04/27/pETWsV1.jpg',
+    title:'spark.music',
+    description:'一个简单的音乐插件',
+    tags: {new:"上新"}
   }
 ];
 </script>
