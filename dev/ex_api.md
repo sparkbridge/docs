@@ -140,6 +140,30 @@ API 仅支持 sparkbridge 2.3.4 以上，事件仅支持 sparkbridge 2.3.5 以�
 - **返回值：** 
   包含戳一戳数据的对象。
 
+  #### video(file)
+
+函数的导出名称:`msgbuilder.video`
+
+返回表示视频消息的对象。
+
+- **参数：**
+  - `file`（字符串 | Buffer）： 视频文件的路径或视频缓冲区。。
+
+- **返回值：** 
+  包含视频数据的对象。
+  
+#### record(file)
+
+函数的导出名称:`msgbuilder.record`
+
+返回表示视频消息的对象。
+
+- **参数：**
+  - `file`（字符串 | Buffer）： 语音文件的路径或语音缓冲区。。
+
+- **返回值：** 
+  包含语音数据的对象。
+
 #### reply(id)
 
 函数的导出名称:`msgbuilder.reply`
