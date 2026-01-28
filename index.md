@@ -77,6 +77,15 @@ features:
             <div class="sponsor-message">想杀了微软TMD WindowsApps</div>
         </div>
     </div>
+   <div class="sponsor">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://yukiebot.top/img/Yukie.ico" alt="赞助者头像" class="sponsor-avatar">
+        </a>
+        <div>
+            <div class="sponsor-name">雪绘BOT团队</div>
+            <div class="sponsor-message">为音游Orzmic设计的查分机器人</div>
+        </div>
+    </div>
     <!-- 更多赞助者内容 -->
 </div>
 
