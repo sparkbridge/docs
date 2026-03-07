@@ -54,6 +54,7 @@ export default defineConfig({
             { text: "事件系统", link: "/dev/event" },
             { text: "spark类", link: "/dev/spark" },
             { text: "导出api", link: "/dev/ex_api" },
+            { text: "从旧版本升级", link: "/dev/upto3" },
           ]
         }
       ],
