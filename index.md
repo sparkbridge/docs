@@ -17,7 +17,7 @@ hero:
       text: GitHub
       link: https://github.com/SparkBridge/SparkBridge3
   image:
-    src: /assets/logo_round.jpg
+    src: /logo_round.jpg
     alt: Spark
 
 features:
