@@ -1,38 +1,49 @@
+---
+outline: deep
+---
+
 # 配置项参考
 
-通常，网页面板会在[127.0.0.1:3002](http://127.0.0.1:3002)开启
+通常，网页面板会在[127.0.0.1:3001](http://127.0.0.1:3001)开启
 
 在特殊情况下，网页面板的端口被占用，面板会自动寻找没有被占用的端口进行使用，当找到可用的端口时，会在控制台进行输出。
 
-如果您开启了锁定面板的选项，面板需要登录才能进入。请私聊您的机器人来获取临时密码。
+默认状态下，面板密码为随机生成的字符串，在SparkBridge3启动时，会自动将密码输出到控制台。
 
-初次安装时，面板密码为空，直接点击登录即可进入。在没有填入管理员信息的时候，禁止锁定面板！这会导致您无法获取密码。
-
-
-<ClientOnly>
-  <ChatBubble :messages="[
-    { userClass: 'user-2', text: '获取密码' },
-    { userClass: 'user-1', text: '您的临时密码为：N0ZyfkJ0Q0Kl' }
-  ]" />
-</ClientOnly> 
+如果您想设置为固定密码，请在`serverdata/web/config.json`中修改`admin_password`字段，并填写您想要设置的密码。
 
 
-## 连接websocket
+# 连接Websocket
 
-首先，打开正向websocket的开关
+> [!TIP] 提示
+> 这篇连接指南适用于SparkBridge连接NapCat的情况。
 
-[![pEVATUA.png](https://s21.ax1x.com/2025/01/27/pEVATUA.png)](https://imgse.com/i/pEVATUA)
+## 配置NapCat
 
-然后，在网页面板中填入您的LLOnebot连接密码（Access Token）
+打开NapCat的控制台，选择`网络适配器`，点击`新建`
 
-[![pEVAbCt.png](https://s21.ax1x.com/2025/01/27/pEVAbCt.png)](https://imgse.com/i/pEVAbCt)
-[![pEVALgf.png](https://s21.ax1x.com/2025/01/27/pEVALgf.png)](https://imgse.com/i/pEVALgf)
+![](https://s41.ax1x.com/2026/03/07/pePVbo6.png)
 
+选择`websocket服务器`
 
-> [!CAUTION] 注意
-> 无论什么时候，SparkBridge都不会要求您输入您的QQ密码
+![](https://s41.ax1x.com/2026/03/07/pePVLFK.png)
 
+选择`启用`，填写一个便于区分的`名称`，`Host地址`如果是本机访问填写`127.0.0.1`，外部访问填写`0.0.0.0`。`Port`填写一个你的主机上的空闲端口，如果是外部访问请允许防火墙通过。
 
-<script setup>
-import ChatBubble from '../.vitepress/components/ChatBubble.vue';
-</script>
+`Token`字段填写你的自定义密码。最后点击保存。
+
+![](https://s41.ax1x.com/2026/03/07/pePVXWD.png)
+
+## 配置SparkBridge
+
+打开SparkBridge网页控制台，选择`插件中心`，点击`base`模块
+
+![](https://s41.ax1x.com/2026/03/07/pePZkY8.png)
+
+`连接地址`填写`ws://你的IP:自定义端口`。`机器人QQ号码`填写你登录过的机器人QQ号。`鉴权密码`为NapCat中设置的Token。
+
+![](https://s41.ax1x.com/2026/03/07/pePZAfS.png)
+
+`超级管理员QQ号码`是一个列表，用于插件内部判断服务器管理员。`机器人主群号`填写服务器的群聊。
+
+最后保存修改，并重启服务器。

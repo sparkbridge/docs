@@ -1,9 +1,9 @@
 # 主要功能
 
 ::: warning
-本页面所展示的为正则表达式实现的功能，所有功能均可以在配置文件修改
+本页面所展示的为官方正则表达式实现的功能，所有功能均可以在配置文件修改
 
-如果您无法触发下列功能，请检查是否修改过文件
+如果您无法触发下列功能，请检查是否修改过文件或者使用了其他订阅源
 :::
 
 ## 查询服务器人数
@@ -18,8 +18,8 @@
 ## 玩家绑定游戏ID
 <ClientOnly>
   <ChatBubble :messages="[
-    { userClass: 'user-2', text: '绑定 Spark' },
-    { userClass: 'user-1', text: 'Spark绑定成功' }
+    { userClass: 'user-2', text: '绑定白名单 Spark' },
+    { userClass: 'user-1', text: '绑定成功' }
   ]" />
 </ClientOnly> 
 
@@ -29,7 +29,7 @@
 ## 玩家解绑游戏ID
 <ClientOnly>
   <ChatBubble :messages="[
-    { userClass: 'user-2', text: '解绑' },
+    { userClass: 'user-2', text: '解绑白名单' },
     { userClass: 'user-1', text: '解绑成功' }
   ]" />
 </ClientOnly> 
@@ -50,16 +50,6 @@
   ]" />
 </ClientOnly> 
 
-## 向服务器中发送讯息
-
-<ClientOnly>
-  <ChatBubble :messages="[
-    { userClass: 'user-2', text: 'chat 你好吗' }
-  ]" />
-</ClientOnly> 
-
-
-这时服务器中的玩家会看到Q群中发来的消息
 
 <script setup>
 import ChatBubble from '../.vitepress/components/ChatBubble.vue';

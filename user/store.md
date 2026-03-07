@@ -1,178 +1,69 @@
 ---
-outline: deep
+title: 插件列表
 ---
-# 插件市场
-
-::: tip 如何入选我们的精选插件列表？
-加入我们的官方群，提供插件的基本信息即可
-:::
-
-以下是我们精选的插件列表：
 
 <script setup>
-const products = [
+// 1. 局部导入你的卡片组件
+// ⚠️ 注意：这里的路径请根据 store.md 和 PluginCard.vue 的实际相对位置进行修改！
+// 比如如果 store.md 在 docs/pages 目录下，而组件在 docs/components 目录下，那就是 '../components/PluginCard.vue'
+import PluginCard from '../.vitepress/components/PluginCard.vue'
+
+// 2. 准备插件列表数据
+const pluginList = [
   {
-    url: 'https://github.com/sparkbridge/example',
-    image: '/spark.jpg',
-    title: '官方示例插件',
-    description: '基于开发文档编写的规范插件，可以作为插件模板',
-    tags: { official: '官方' }
+    id: 1,
+    icon: '', // 可以填写真实图标的 URL
+    title: 'sb3_bridgebase',
+    author: '官方团队',
+    desc: '提供兼容SparkBridge2的事件分发、信息分发转换服务',
+    link: 'https://github.com/your-repo/core',
+    tags: ['官方', '核心'] // 自动触发蓝色和橙色标签
   },
   {
-    url: 'https://www.minebbs.com/resources/spark2-rank-q-sb.7886/',
-    image: 'https://s21.ax1x.com/2024/08/23/pAFQnSJ.jpg',
-    title: 'Spark2.rank',
-    description: 'Q群获取游戏内可视化统计数据，离线生成分享图',
-    tags: {}
+    id: 2,
+    icon: '', // 为空会自动显示首字母 "P"
+    title: 'sb3_regex',
+    author: '官方团队',
+    desc: '提供正则引擎功能',
+    link: 'https://github.com/your-repo/pg-plugin',
+    tags: ['推荐'] // '推荐' 自动触发粉红色标签
   },
   {
-    url: 'https://www.minebbs.com/resources/spark-motd-java.5505/',
-    image: 'https://s21.ax1x.com/2024/08/23/pAFQUld.png',
-    title: 'Spark.motd',
-    description: '基岩/Java版服务器查询，不依赖任何api，稳定可靠的查询方式',
-    tags: {}
-  },
-  {
-    url: 'https://www.minebbs.com/resources/spark-testvanish-1-2-0.9185/',
-    image: 'https://s21.ax1x.com/2024/08/24/pAF04FH.png',
-    title: 'spark.testVanish',
-    description: '让bot不再在您使用完全隐身时背刺您',
-    tags: { }
-  },
-  {
-    url: 'https://www.minebbs.com/resources/spark-ban-q.8331/',
-    image: 'https://s21.ax1x.com/2024/08/24/pAF0aeU.jpg',
-    title: 'spark.ban',
-    description: '一个简单的Q群违禁词插件',
-    tags: {}
-  },
-  {
-    url: 'https://www.minebbs.com/resources/spark-niuzi.10490/',
-    image: 'https://s21.ax1x.com/2025/02/03/pEZIGM8.png',
-    title: 'spark.niuzi',
-    description: '牛子养成系统',
-    tags: {sale:"热门"}
-  },
-  {
-    url: 'https://www.minebbs.com/resources/spark-regexessentials.5838/',
-    image: 'https://s21.ax1x.com/2025/02/20/pEQYeAO.webp',
-    title: 'spark.regexessentials',
-    description: '正则基础插件',
-    tags: {sale:"热门"}
-  },
-  {
-    url:'https://minebbs.com/resources/spark-music-q.10475/',
-    image:'https://s21.ax1x.com/2025/04/27/pETWsV1.jpg',
-    title:'spark.music',
-    description:'一个简单的音乐插件',
-    tags: {new:"上新"}
+    id: 3,
+    icon: '',
+    title: 'Bilibili 动态转发',
+    author: 'ACG 爱好者',
+    desc: '实时监听指定 B 站 UP 主的动态更新，并自动格式化推送到关联的群组中。',
+    link: '#',
+    tags: ['社交媒体', '实用工具'] // 默认灰色标签
   }
 ];
 </script>
 
-<div class="product-grid">
+# 🧩 插件市场
 
-  <div class="product" v-for="product in products" :key="product.url">
-    <a :href="product.url" class="product-image-link">
-      <img :src="product.image" class="product-image">
-    </a>
-    <div class="product-info">
-      <!-- 检查是否存在标签并渲染它们 -->
-      <!-- <span v-for="(value, key) in product.tags" :key="key" :class="key">{{ value }}</span> -->
-      <div v-for="(value, key) in product.tags" :key="key">
-    <span :class="'tag ' + key + '-tag'">{{ value }}</span>
-  </div>
-      <h3 class="product-title">{{ product.title }}</h3>
-      <p class="product-description">{{ product.description }}</p>
-    </div>
-  </div>
+欢迎来到 **SparkBridge3 插件中心**。在这里，你可以发现由官方和活跃社区开发者提供的各种强大扩展，为你的自动化控制台注入无限可能。
+
+<div class="plugin-market-grid">
+  <PluginCard 
+    v-for="plugin in pluginList" 
+    :key="plugin.id"
+    :icon="plugin.icon"
+    :title="plugin.title"
+    :author="plugin.author"
+    :desc="plugin.desc"
+    :link="plugin.link"
+    :tags="plugin.tags"
+  />
 </div>
 
-<style>
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
+<style scoped>
+/* 4. 局部页面的样式，定义网格布局 */
+.plugin-market-grid {
+  display: grid;
+  /* 响应式网格：卡片最小 280px，空间足够则自动增加列数 */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  margin-top: 24px;
 }
-
-.product {
-  flex: 0 0 calc(50% - 40px);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.product:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.product-image-link {
-  display: block;
-  /* 使链接填充其容器 */
-  text-align: center;
-  /* 确保图片水平居中 */
-}
-
-.product-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  /* 设置图片宽高比为16:9 */
-  object-fit: cover;
-  /* 确保图片按比例填充容器 */
-  transition: transform 0.3s ease;
-  /* 平滑缩放动画 */
-}
-
-.product-image-link:hover .product-image {
-  transform: scale(1.05);
-  /* 鼠标悬浮时图片放大 */
-}
-
-.product-info {
-  text-align: center;
-  padding: 15px;
-}
-
-.product-title {
-  margin: 0;
-  padding: 10px 0;
-  font-size: 1.2em;
-}
-
-.product-description {
-  margin-top: 0.5em;
-  color: #666;
-  font-size: 1em;
-}
-
-.tag {
-  display: inline-block;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  font-size: 0.8em;
-  color: #fff;
-}
-
-.official-tag {
-  background-color: #4CAF50;
-}
-
-.new-tag {
-  background-color: #2196F3;
-}
-
-.tool-tag {
-  background-color: #2196F3; 
-}
-
-
-.sale-tag {
-  background-color: #f44336; 
-}
-
 </style>

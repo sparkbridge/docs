@@ -11,7 +11,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://imgse.com/content/images/users/gMmSe/av_1650212479.jpg',
+    avatar: 'https://s11.ax1x.com/2022/09/14/vxZIt1.jpg',
     name: 'Lition',
     title: '项目创死人',
     links: [
@@ -19,7 +19,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://s11.ax1x.com/2022/12/21/zO7I7d.png',
+    avatar: 'https://s21.ax1x.com/2025/07/19/pV3bX2F.jpg',
     name: 'Sbaoor',
     title: '行走的五十万',
     links: [

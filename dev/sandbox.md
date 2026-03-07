@@ -24,6 +24,6 @@
 
 安装完成之后，在Release下载最新的SparkBridge
 
-[SparkBridge Release](https://github.com/sparkbridge/sparkbridge2/releases)
+[SparkBridge Release](https://github.com/sparkbridge/sparkbridge3/releases)
 
-下载解压之后，打开文件夹，运行sandbox.bat即可开启沙箱模式
+下载解压之后，打开文件夹，运行node index即可开启沙箱模式

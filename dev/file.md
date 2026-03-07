@@ -63,4 +63,4 @@ configFile.updateFile('config.json',local_config,json5);
 
 ## 网页配置面板
 
-在SparkBride 2.4.0时引入了`telemetry`插件，此插件可以生成网页面板来编辑配置文件，大幅度降低文件修改的难度
+在SparkBride 3.0加入了原生网页web配置面板，您可以在[网页配置](/dev/webpanel.md)中注册您的配置项

@@ -9,6 +9,8 @@
 | 事件名称       |      事件     |  
 | ------------- | :-----------: | 
 | bot.online     | 机器人登录成功 |
+|core.ready      |  SparkBridge3 初始化完成 |
+|gocq.pack| 收到GoCQ协议包|
 | message.group.normal      |  收到群聊消息    | 
 | message.private.friend |  收到好友私聊消息   |
 

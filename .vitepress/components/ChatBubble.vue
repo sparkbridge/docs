@@ -1,88 +1,125 @@
-
-
 <template>
-  <div class="dialogue">
-    <div
-      v-for="(message, index) in messages"
-      :key="index"
-    >
-      <div class="bubble" :class="message.userClass">
-        <!-- 判断是否为图片 -->
-        <img v-if="message.img" :src="message.img" alt="Message Image" />
-        <span v-else>{{ message.text }}</span>
-      </div>
-      <div class="clear"></div>
+    <div class="dialogue-container" :class="{ 'dark-theme': isDark }">
+        <div v-for="(message, index) in messages" :key="index" class="message-row"
+            :class="message.userClass === 'user-2' ? 'is-right' : 'is-left'">
+            <div class="bubble">
+                <img v-if="message.img" :src="message.img" alt="Message Image" class="bubble-img" />
+                <span v-else class="bubble-text">{{ message.text }}</span>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+// ★ 重点 1：直接从 vitepress 导入内置数据 Hook
+import { useData } from 'vitepress';
 
-const props = defineProps({
-  messages: {
-    type: Array,
-    required: true,
-    default: () => []
-  }
+defineProps({
+    messages: {
+        type: Array,
+        required: true,
+        default: () => []
+    }
 });
+
+// ★ 重点 2：解构出全局的响应式 isDark 变量
+const { isDark } = useData();
 </script>
 
 <style scoped>
-    .dialogue {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+/* ==========================================
+   1. 默认亮色模式变量 (自动契合 VitePress 亮色)
+   ========================================== */
+.dialogue-container {
+    /* 我们可以直接利用 VitePress 的内置 CSS 变量，这样颜色更统一 */
+    --bg-color: var(--vp-c-bg-soft, #f8fafc);
+    --bubble-border: var(--vp-c-divider, #e2e8f0);
 
-    .bubble {
-      position: relative;
-      margin-bottom: 10px;
-      padding: 12px;
-      border-radius: 18px;
-      font-size: 1em;
-      background-color: transparent; /* 背景设为透明 */
-      border: 1px solid #ddd; /* 添加边框以增加可见性 */
-      word-wrap: break-word; /* 确保文本可以换行 */
-    }
+    --bubble-bg-left: var(--vp-c-bg, #ffffff);
+    --text-left: var(--vp-c-text-1, #334155);
 
-    .bubble.user-1 {
-      float: left;
-      color: #555; /* 可以为不同用户设置不同的文本颜色 */
-    }
+    --bubble-bg-right: var(--vp-c-brand, #3b82f6);
+    /* 使用 VitePress 的主题色 */
+    --text-right: #ffffff;
+    --bubble-border-right: transparent;
 
-    .bubble.user-2 {
-      float: right;
-      color: #333; /* 可以为不同用户设置不同的文本颜色 */
-    }
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 24px;
+    background-color: var(--bg-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-    .bubble::before {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: transparent;
-    }
+/* ==========================================
+   2. 暗黑模式变量 
+   ========================================== */
+.dialogue-container.dark-theme {
+    /* 暗黑模式下，自动覆盖变量 */
+    --bg-color: var(--vp-c-bg-soft, #1e293b);
+    --bubble-border: var(--vp-c-divider, #334155);
 
-    /* .bubble.user-1::before {
-      top: 0;
-      left: -15px;
-      border-width: 0 15px 15px 0;
-      border-color: transparent #ddd transparent transparent; 
-    }
+    --bubble-bg-left: var(--vp-c-bg-alt, #334155);
+    --text-left: var(--vp-c-text-1, #f8fafc);
 
-    .bubble.user-2::before {
-      top: 0;
-      right: -15px;
-      border-width: 15px 15px 0 0;
-      border-color: transparent transparent transparent #ddd; 
-    } */
+    --bubble-bg-right: var(--vp-c-brand, #2563eb);
+    --text-right: var(--vp-c-text-1, #ffffff);
 
-    .clear {
-      clear: both;
-    }
-  </style>
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   3. 布局与气泡样式
+   ========================================== */
+.message-row {
+    display: flex;
+    width: 100%;
+}
+
+.is-left {
+    justify-content: flex-start;
+}
+
+.is-right {
+    justify-content: flex-end;
+}
+
+.bubble {
+    position: relative;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 75%;
+    word-wrap: break-word;
+    transition: all 0.3s ease;
+}
+
+.is-left .bubble {
+    background-color: var(--bubble-bg-left);
+    color: var(--text-left);
+    border: 1px solid var(--bubble-border);
+    border-radius: 18px 18px 18px 4px;
+}
+
+.is-right .bubble {
+    background-color: var(--bubble-bg-right);
+    color: var(--text-right);
+    border: 1px solid var(--bubble-border-right);
+    border-radius: 18px 18px 4px 18px;
+}
+
+.bubble-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.bubble:has(> .bubble-img) {
+    padding: 4px;
+}
+</style>
