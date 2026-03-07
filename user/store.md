@@ -16,8 +16,8 @@ const pluginList = [
     title: 'sb3_bridgebase',
     author: '官方团队',
     desc: '提供兼容SparkBridge2的事件分发、信息分发转换服务',
-    link: 'https://github.com/your-repo/core',
-    tags: ['官方', '核心'] // 自动触发蓝色和橙色标签
+    link: '#',
+    tags: ['官方','已内置'] // 自动触发蓝色和橙色标签
   },
   {
     id: 2,
@@ -25,17 +25,53 @@ const pluginList = [
     title: 'sb3_regex',
     author: '官方团队',
     desc: '提供正则引擎功能',
-    link: 'https://github.com/your-repo/pg-plugin',
-    tags: ['推荐'] // '推荐' 自动触发粉红色标签
+    link: '#',
+    tags: ['官方','已内置'] // '推荐' 自动触发粉红色标签
   },
   {
     id: 3,
     icon: '',
-    title: 'Bilibili 动态转发',
-    author: 'ACG 爱好者',
-    desc: '实时监听指定 B 站 UP 主的动态更新，并自动格式化推送到关联的群组中。',
+    title: 'sb3_wl',
+    author: '官方团队',
+    desc: '提供白名单管理功能',
     link: '#',
-    tags: ['社交媒体', '实用工具'] // 默认灰色标签
+    tags: ['官方','已内置'] // 默认灰色标签
+  },
+  {
+    id: 4,
+    icon: '',
+    title: 'sb3_mc',
+    author: '官方团队',
+    desc: '提供与游戏内的交互功能',
+    link: '#',
+    tags: ['官方','已内置'] // 默认灰色标签
+  },
+  {
+    id: 5,
+    icon: 'https://www.minebbs.com/data/resource_icons/12/12508.jpg?1772874918',
+    title: 'spark.bili-parser',
+    author: 'Sbaoor',
+    desc: '解析B站链接与小程序',
+    link: 'https://www.minebbs.com/resources/spark-bili-parser.12508/',
+    tags: ['热门'] // 默认灰色标签
+  },
+  {
+    id: 6,
+    icon: 'https://www.minebbs.com/data/resource_icons/5/5505.jpg?1772874981',
+    title: 'spark.motd',
+    author: 'Sbaoor',
+    desc: '查询MC基岩版/Java版服务器信息',
+    link: 'https://www.minebbs.com/resources/spark-motd-java.5505/',
+    tags: [] // 默认灰色标签
+  },
+  {
+    id: 7,
+    icon: 'https://www.minebbs.com/data/resource_icons/10/10421.jpg?1772875265',
+    title: 'spark.ccb',
+    author: 'Lition',
+    desc: '鉴别群聊中的CCB大手子',
+    link: 'https://www.minebbs.com/resources/spark-motd-java.5505/',
+    tags: [] // 默认灰色标签
   }
 ];
 </script>

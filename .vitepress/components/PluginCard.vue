@@ -70,7 +70,7 @@ const getTagStyle = (tag) => {
     const text = typeof tag === 'object' ? tag.text : tag;
     // 关键词自动着色
     if (text === '官方') return 'tag-official';
-    if (text === '推荐' || text === '精华') return 'tag-recommend';
+    if (text === '热门' || text === '精华') return 'tag-recommend';
     if (text === '核心') return 'tag-core';
 
     return 'tag-default'; // 其他任意文本的默认灰色
@@ -198,9 +198,11 @@ const getTagStyle = (tag) => {
 }
 
 .tag-default {
-    background: var(--vp-c-bg-alt, #e2e8f0);
+    background: #ffffff;
     color: var(--text-sub);
-    border: 1px solid transparent;
+    /* 保持使用次级文本颜色，避免纯黑太突兀 */
+    border: 1px solid var(--card-border);
+    /* 使用与卡片相同的柔和边框色 */
 }
 
 /* 适配暗黑模式的标签颜色修正 */
@@ -223,8 +225,9 @@ const getTagStyle = (tag) => {
 }
 
 :global(.dark) .tag-default {
-    background: rgba(100, 116, 139, 0.2);
-    color: #94a3b8;
+    background: transparent;
+    border: 1px solid var(--card-border);
+    color: var(--text-sub);
 }
 
 /* ==========================================
