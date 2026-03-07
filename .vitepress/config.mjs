@@ -50,7 +50,7 @@ export default defineConfig({
             { text: "网页配置面板", link: "/dev/webpanel" },
             { text: "Log记录器", link: "/dev/logger" },
             { text: "CQ客户端API", link: "/dev/qc_api" },
-            // { text: "占位符", link: "/dev/placeholder" },
+             { text: "Web页面", link: "/dev/webpage" },
             { text: "事件系统", link: "/dev/event" },
             { text: "spark类", link: "/dev/spark" },
             { text: "导出api", link: "/dev/ex_api" },

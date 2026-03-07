@@ -12,7 +12,7 @@ hero:
       link: /user/install
     - theme: alt
       text: 开发文档
-      link: /dev/api
+      link: /dev/setup
     - theme: alt
       text: GitHub
       link: https://github.com/SparkBridge/SparkBridge3
