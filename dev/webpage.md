@@ -33,7 +33,7 @@ spark.web.registerPage(TITLE,FILE)
 spark.web.registerPage("测试页面","index.html")
 ```
 
-这个示例会注册一个页面，TITLE部分展示在网页控制台的侧边栏，页面作为frame嵌入展示在网页中
+这个示例会注册一个页面，TITLE部分展示在网页控制台的侧边栏，插件文件夹的index.html页面作为frame嵌入展示在网页中
 
 如果您想构筑自己的页面，请查看[规则](https://github.com/sparkbridge/sparkbridge3/blob/main/docs/iframe.md)
 
