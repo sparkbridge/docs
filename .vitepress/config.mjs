@@ -52,6 +52,7 @@ export default defineConfig({
             { text: "CQ客户端API", link: "/dev/qc_api" },
              { text: "Web页面", link: "/dev/webpage" },
             { text: "事件系统", link: "/dev/event" },
+            { text: "正则表达式命令", link: "/dev/regex" },
             { text: "spark类", link: "/dev/spark" },
             { text: "导出api", link: "/dev/ex_api" },
             { text: "从旧版本升级", link: "/dev/upto3" },
