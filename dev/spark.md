@@ -46,3 +46,8 @@ spark.env.get("xxx")
 |main_group | 用户的主要群聊 |
 |onBDS| sparkbridge是否作为BDS的插件运行|
 |admin_qq|sparkbridge的QQ管理员数组|
+|xbox_exist|函数，传入xboxid，返回是否已注册|
+|get_qid_by_xbox| 函数，传入xboxid，返回qqid，否则为空|
+|get_xbox_by_qid| 函数，传入qqid，返回xboxid，否则为空|
+|set_xbox_by_qid| 函数，传入qqid，xboxid，设置xboxid|
+|del_xbox_by_qid | 函数，传入qqid，删除xboxid|
