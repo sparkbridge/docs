@@ -10,7 +10,7 @@ spark.on('core.ready', () => {
 
     if (registerRegexAction) {
         registerRegexAction('getXboxID', async (params, pack, context) => {
-            // params 是调用的参数
+            // params 是调用的参数的数组
             // pack 是聊天原始包
             // context 是上下文对象
 
@@ -44,7 +44,7 @@ spark.on('core.ready', () => {
 
     if (registerRegexAction) {
         registerRegexAction('getXboxID', async (params, pack, context) => {
-            // params 是调用的参数
+            // params 是调用的参数的数组
             // pack 是聊天原始包
             // context 是上下文对象
             let qid = params[0];
@@ -61,7 +61,7 @@ spark.on('core.ready', () => {
 
 ```
 
-这个示例注册了一个命令`getXboxID_with_qq`，在执行类型选择`调用插件命令`的时候，填入参数`getXboxID,$at`，即可调用此函数。
+这个示例注册了一个命令`getXboxID`，在执行类型选择`调用插件命令`的时候，填入参数`getXboxID,$at`，即可调用此函数。
 
 函数返回一个对象，对象中的键值对会作为返回值，在正则表达式中可以直接通过`$xbox`获取返回值`。
 
