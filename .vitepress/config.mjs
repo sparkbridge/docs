@@ -6,16 +6,17 @@ export default defineConfig({
   description: "Neo QQ bot system",
   head: [
     // 添加图标
-    ['link', { rel: 'icon', href: '/assets/logo_round.jpg' }]
+    ['link', { rel: 'icon', href: '/logo_round.jpg' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/assets/logo_round.jpg',
+    logo: '/logo_round.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/user/info' },
       { text: '开发参考', link: '/dev/setup' },
-      { text: '关于我们', link: '/about/us' }
+      { text: '关于我们', link: '/about/us' },
+      { text: '更新日志', link: '/update/log' },
     ],
 
     sidebar: {
