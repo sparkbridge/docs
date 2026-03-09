@@ -30,3 +30,51 @@ features:
 ---
 
 
+<script setup>
+import SponsorList from './.vitepress/components/SponsorList.vue'
+
+// 这里定义你的赞助者数据，你也可以把它抽离到一个单独的 ts/json 文件中引入
+const mySponsors = [
+  {
+    name: '123456788',
+    avatar: 'https://s21.ax1x.com/2025/01/19/pEkaKYV.jpg',
+    message: '',
+    link: ''
+  },
+  {
+    name: 'serika',
+    avatar: 'https://s21.ax1x.com/2025/01/19/pEka3y4.jpg',
+    message: 'Niko Niko 喵 喵，Niko Niko 喵 喵~',
+    link: 'https://blog.ikgy.top/'
+  },
+  {
+    name: '42',
+    avatar: 'https://s21.ax1x.com/2025/01/19/pEkaUFx.jpg',
+    message: '汀 汀 莱万汀!汀汀莱万汀~'
+  },
+  {
+    name: '故渊',
+    avatar: 'https://s21.ax1x.com/2025/01/19/pEkadfK.jpg',
+    message: '低价游戏云出,官网:https://ai2019.com/aff/DMVBWDCX',
+    link: 'https://ai2019.com/aff/DMVBWDCX'
+  },
+  {
+    name: 'NeosRain',
+    avatar: 'https://s41.ax1x.com/2026/03/09/peiGBi4.png',
+    message: '想杀了微软TMD WindowsApps'
+  },
+  {
+    name:"雪绘BOT团队",
+    avatar: 'https://yukiebot.top/img/Yukie.ico',
+    message: '为音游Orzmic设计的查分机器人'
+  }
+]
+</script>
+
+## 我们的赞助者
+
+<SponsorList :sponsors="mySponsors" />
+
+### 成为我们的赞助者，只需10CNY ！
+
+在我们的官网上留下您的个人信息，成为我们尊贵的赞助者。您的支持将助力我们继续前行，为您带来更多精彩内容。立即行动，加入我们吧！
