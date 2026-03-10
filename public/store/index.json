@@ -45,5 +45,16 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.5/spark.ping.zip"
+    },
+    {
+        "name": "webtalk",
+        "version": "1.0.0",
+        "author": "Sbaoor",
+        "desc": "在网页面板与服务器中对话",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.7/webtalk.zip"
     }
 ]
