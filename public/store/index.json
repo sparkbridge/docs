@@ -10,5 +10,17 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.3/spark.bilibili-parser.zip"
+    },
+    {
+        "name": "ccb",
+        "version": "0.0.2",
+        "author": "lition",
+        "desc": "鉴别群聊中的踩踩背大神",
+        "tags": [
+            "ccb",
+            "toy"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.4/spark.ccb.zip"
     }
 ]
