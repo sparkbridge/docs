@@ -2,7 +2,7 @@
     "code": 200,
     "msg": "success",
     "data": {
-        "version": "3.0.7",
+        "version": "3.0.9",
         "releaseNotes": "1. 修复了正则引擎的转义 Bug\n2. 优化了面板的渲染性能",
         "downloadUrl": "https://www.minebbs.com/resources/sparkbridge-bot-qq.15586/"
     }
