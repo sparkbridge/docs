@@ -56,6 +56,7 @@ export default defineConfig({
             { text: "正则表达式命令", link: "/dev/regex" },
             { text: "spark类", link: "/dev/spark" },
             { text: "导出api", link: "/dev/ex_api" },
+            { text: "发布插件到官方市场", link: "/dev/store" },
             { text: "从旧版本升级", link: "/dev/upto3" },
           ]
         }
