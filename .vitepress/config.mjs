@@ -17,6 +17,13 @@ export default defineConfig({
       { text: '开发参考', link: '/dev/setup' },
       { text: '关于我们', link: '/about/us' },
       { text: '更新日志', link: '/update/log' },
+      {
+        text: '资源',
+        items: [
+          { text: '插件商店', link: '/plugin/store' },
+          { text: '插件文档', link: '/plugin/index' }
+        ]
+      }
     ],
 
     sidebar: {
@@ -31,7 +38,7 @@ export default defineConfig({
             { text: '主要功能', link: '/user/func' },
             { text: "正则表达式", link: "/user/regex" },
             { text: '常见问题', link: '/user/prob' },
-            { text: '插件市场', link: '/user/store' },
+            // { text: '插件市场', link: '/user/store' },
 
           ]
         }
@@ -61,6 +68,17 @@ export default defineConfig({
           ]
         }
       ],
+      '/plugin/':[
+        {
+          text: '资源中心',
+          items: [
+            { text: "ping", link: "/plugin/docs/ping" },
+            { text: "ccb", link: "/plugin/docs/ccb" },
+            { text: "motd", link: "/plugin/docs/motd" },
+            { text: "getimg", link: "/plugin/docs/getimg" },
+          ]
+        }
+      ],
       '/about/': [
         {
           text: '关于',
@@ -69,7 +87,8 @@ export default defineConfig({
             { text: '开发者们', link: '/about/devs' }
           ]
         }
-      ]
+      ],
+      
   },
 
     socialLinks: [
