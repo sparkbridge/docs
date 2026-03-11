@@ -7,8 +7,20 @@ import ChangelogList from '../.vitepress/components/ChangelogList.vue'
 
 const releaseData = [
   {
-    version: "v3.0.7",
+    version: "v3.0.9",
     isLatest: true,
+    date: "2026-03-11",
+    coreVersion: "3.0.9",
+    webVersion: "0.0.9",
+    summary: "本次更新添加了web安装器和在线商店页面",
+    changes: [
+      { type: 'feature', text: '新增Web安装页面，可以拖入打包好的zip插件进行全自动安装' },
+      { type: 'feature', text: '新增在线商店页面，可以查看所有云端插件的详细信息' },
+    ]
+  },
+  {
+    version: "v3.0.7",
+    isLatest: false,
     date: "2026-03-09",
     coreVersion: "3.0.7",
     webVersion: "0.0.6",
