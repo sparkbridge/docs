@@ -6,7 +6,8 @@ export default defineConfig({
   description: "Neo QQ bot system",
   head: [
     // 添加图标
-    ['link', { rel: 'icon', href: '/logo_round.jpg' }]
+    ['link', { rel: 'icon', href: '/logo_round.jpg' }],
+    ['script', { src: 'https://umami.lition.top/script.js', 'data-website-id':"db2f6ffc-a0a6-4a8f-8bfe-8c0bd30cf3a3" }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
