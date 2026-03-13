@@ -39,7 +39,7 @@ export default defineConfig({
             { text: '主要功能', link: '/user/func' },
             { text: "正则表达式", link: "/user/regex" },
             { text: '常见问题', link: '/user/prob' },
-            // { text: '插件市场', link: '/user/store' },
+            { text: '使用条例', link: '/user/rule' },
 
           ]
         }
