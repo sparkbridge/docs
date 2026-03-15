@@ -6,7 +6,7 @@
 
 1.建议使用Visual Studio Code编写插件
 
-2.将[此文件夹](https://danieltoyama.lanzouu.com/iHmhn2kkj20j)复制到sparkbridge根目录下，目录结构示意如下
+2.将[此文件夹](https://github.com/sparkbridge/sparkbridge3/tree/main/SparkBridgeDevelopTool)复制到sparkbridge根目录下，目录结构示意如下
 
 ```
 ├─Sparkbridge2
