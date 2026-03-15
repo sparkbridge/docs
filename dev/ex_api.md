@@ -2,174 +2,357 @@
 outline: deep
 ---
 
-
-# 导出API
-
-使用导出 API，你可以在其他 LSE 插件甚至原生插件中调用 SparkAPI
-
-::: warning 注意
-API 仅支持 sparkbridge 2.3.4 以上，事件仅支持 sparkbridge 2.3.5 以上
-:::
-
-要使用 sparkbridge 提供的导出 API，你需要使用 [LSE 的导入函数接口](https://lse.liteldev.com/zh/apis/ScriptAPI/Ll/#_6)，并将 sparkbridge2 设为插件依赖项或将导入函数部分放至服务器启动完毕后
-
-如无特殊说明，sparkbridge 提供的导出 API 的命名空间均为 'SparkAPI'
-
-## API
-
-### GetGroupId()
-
-函数的导出名称:`GetGroupId`
-
-获取配置文件中的群号
-
-- **参数:无**
-
-- **返回值:配置文件中的群号，即sparkbridge插件中的spark.mc.config.group**
-
-### QQ 发送 API
-
-#### sendGroupMsg(gid, msg) 
-
-函数的导出名称:`sendGroupMsg`
-
-发送一个群信息
-
-- **参数：**
-  - `gid`：群ID。
-  - `msg`：信息内容。
-
-#### sendPrivateMsg(fid, msg)
-
-函数的导出名称:`sendPrivateMsg`
-
-发送一个私信信息
-
-- **参数：**
-  - `fid`：好友ID。
-  - `msg`：信息内容。
-
-#### sendGroupForwardMsg(gid, msg)
-
-函数的导出名称:`sendGroupForwardMsg`
-
-发送群合并聊天信息
-
-- **参数：**
-  - `gid`：群ID。
-  - `msg`：自定义转发消息, 具体看 [CQcode](https://docs.go-cqhttp.org/cqcode/#%E5%90%88%E5%B9%B6%E8%BD%AC%E5%8F%91%E6%B6%88%E6%81%AF%E8%8A%82%E7%82%B9)。
-
-
-#### deleteMsg(id)
-
-函数的导出名称:`deleteMsg`
-
-撤回某个信息
-
-- **参数：**
-  - `id`：信息id
-
-### sendWSPack(msg)
-
-函数的导出名称:`sendWSPack`
-
-发送一条websocket消息
-
-- **参数：**
-  - `msg`：要发送的websocket消息
-
-### Msgbuilder API
-
-#### img(file)
-
-函数的导出名称:`msgbuilder.img`
-
-返回表示图片消息的对象。
-
-- **参数：**
-  - `file`（字符串 | Buffer）：图片文件的路径或图片缓冲区。
-
-- **返回值：** 
-  包含图片数据的对象。
-
-#### at(qid)
-
-函数的导出名称:`msgbuilder.at`
-
-返回表示 @提及 消息的对象。
-
-- **参数：**
-  - `qid`（字符串）：QQ ID。
-
-- **返回值：** 
-  包含 @提及 数据的对象。
-
-#### face(id)
-
-函数的导出名称:`msgbuilder.face`
-
-返回表示表情消息的对象。
-
-- **参数：**
-  - `id`（字符串）：表情 ID。
-
-- **返回值：** 
-  包含表情数据的对象。
-
-#### text(raw)
-
-函数的导出名称:`msgbuilder.text`
-
-返回表示文本消息的对象。
-
-- **参数：**
-  - `raw`（字符串）：原始文本。
-
-- **返回值：** 
-  包含文本数据的对象。
-
-#### poke(id)
-
-函数的导出名称:`msgbuilder.poke`
-
-返回表示戳一戳消息的对象。
-
-- **参数：**
-  - `id`（字符串）：QQ ID。
-
-- **返回值：** 
-  包含戳一戳数据的对象。
-
-#### reply(id)
-
-函数的导出名称:`msgbuilder.reply`
-
-返回表示回复消息的对象。
-
-- **参数：**
-  - `id`（字符串）：回复 ID。
-
-- **返回值：** 
-  包含回复数据的对象。
-
-
-#### format(msg)
-
-函数的导出名称:`msgbuilder.format`
-
-格式化消息以确保其结构正确。
-
-- **参数：**
-  - `msg`（字符串 | 对象 | 数组）：要格式化的消息（们）。
-
-- **返回值：** 
-  格式化后的消息。
-
-#### ForwardMsgBuilder()
-
-函数的导出名称:`msgbuilder.ForwardMsgBuilder`
-
-返回 ForwardMsgBuilder 的新实例。
-
-- **返回值：** 
-  ForwardMsgBuilder 的新实例。
+# SparkAPI - LLSE 插件调用接口
+
+## 概述
+通过 `ll.imports("SparkAPIEx", "函数名")` 导入对应函数，可在其他 LLSE 插件中调用 SparkBridge3 的功能。
+
+> 为与SparkBridge2版本API做出区分，使用的命名空间为 "SparkAPIEx"
+
+## 基础信息
+
+### 获取框架版本
+`getVersion()`
+- 返回值：SparkBridge3 当前版本号
+- 返回值类型：String
+
+### 获取主群号
+`getMainGroup()`
+- 返回值：配置文件中的主群号
+- 返回值类型：Number
+
+### 获取管理员列表
+`getAdminQQ()`
+- 返回值：管理员 QQ 号列表
+- 返回值类型：Array
+
+### 获取机器人 QQ
+`getBotQQ()`
+- 返回值：机器人自身的 QQ 号
+- 返回值类型：Number
+
+## 消息发送
+
+### 发送群消息
+`sendGroupMsg(gid, msg)`
+- 参数：
+  - gid : `Number` - 群号
+  - msg : `String | Array` - 消息内容或消息段数组
+- 返回值：发送结果
+- 返回值类型：Promise
+
+### 发送私聊消息
+`sendPrivateMsg(fid, msg)`
+- 参数：
+  - fid : `Number` - 好友 QQ 号
+  - msg : `String | Array` - 消息内容或消息段数组
+- 返回值：发送结果
+- 返回值类型：Promise
+
+### 发送合并转发消息
+`sendGroupForwardMsg(gid, msg)`
+- 参数：
+  - gid : `Number` - 群号
+  - msg : `Array` - 合并转发消息内容
+- 返回值：发送结果
+- 返回值类型：Promise
+
+### 撤回消息
+`deleteMsg(id)`
+- 参数：
+  - id : `String` - 消息 ID
+- 返回值：操作结果
+- 返回值类型：Promise
+
+### 发送原始 WebSocket 包
+`sendWSPack(pack)`
+- 参数：
+  - pack : `Object` - 要发送的原始数据包
+- 返回值：发送结果
+- 返回值类型：void
+
+## 群管理
+
+### 禁言群成员
+`sendGroupBan(gid, mid, duration)`
+- 参数：
+  - gid : `Number` - 群号
+  - mid : `Number` - 要禁言的成员 QQ
+  - duration : `Number` - 禁言时长（秒）
+- 返回值：操作结果
+- 返回值类型：Promise
+
+### 全员禁言
+`sendGroupWholeBan(gid, enable)`
+- 参数：
+  - gid : `Number` - 群号
+  - enable : `Boolean` - true 开启全员禁言，false 关闭
+- 返回值：操作结果
+- 返回值类型：void
+
+### 踢出群成员
+`setGroupKick(gid, mid, reject)`
+- 参数：
+  - gid : `Number` - 群号
+  - mid : `Number` - 要踢出的成员 QQ
+  - reject : `Boolean` - 是否拒绝再次加群
+- 返回值：操作结果
+- 返回值类型：void
+
+### 退出群聊
+`setGroupLeave(gid, dismiss)`
+- 参数：
+  - gid : `Number` - 群号
+  - dismiss : `Boolean` - 是否解散群（仅群主有效）
+- 返回值：操作结果
+- 返回值类型：void
+
+### 设置群名称
+`setGroupName(gid, name)`
+- 参数：
+  - gid : `Number` - 群号
+  - name : `String` - 新群名称
+- 返回值：操作结果
+- 返回值类型：void
+
+## 获取信息
+
+### 获取群成员列表
+`getGroupMemberList(gid)`
+- 参数：
+  - gid : `Number` - 群号
+- 返回值：群成员信息数组
+- 返回值类型：Promise(Array)
+
+### 获取群成员信息
+`getGroupMemberInfo(gid, mid)`
+- 参数：
+  - gid : `Number` - 群号
+  - mid : `Number` - 成员 QQ
+- 返回值：指定成员详细信息
+- 返回值类型：Promise(Object)
+
+### 获取群列表
+`getGroupList()`
+- 返回值：机器人加入的所有群列表
+- 返回值类型：Promise(Array)
+
+### 获取好友列表
+`getFriendList()`
+- 返回值：机器人的好友列表
+- 返回值类型：Promise(Array)
+
+### 获取群信息
+`getGroupInfo(gid, noCache)`
+- 参数：
+  - gid : `Number` - 群号
+  - noCache : `Boolean` - 是否不使用缓存
+- 返回值：群详细信息
+- 返回值类型：Promise(Object)
+
+### 获取陌生人信息
+`getStrangerInfo(uid, noCache)`
+- 参数：
+  - uid : `Number` - 用户 QQ
+  - noCache : `Boolean` - 是否不使用缓存
+- 返回值：用户详细信息
+- 返回值类型：Promise(Object)
+
+### 获取好友信息
+`getFriendInfo(fid, noCache)`
+- 参数：
+  - fid : `Number` - 好友 QQ
+  - noCache : `Boolean` - 是否不使用缓存
+- 返回值：好友详细信息
+- 返回值类型：Promise(Object)
+
+### 获取登录信息
+`getLoginInfo()`
+- 返回值：机器人登录信息（QQ、昵称等）
+- 返回值类型：Promise(Object)
+
+### 获取状态
+`getStatus()`
+- 返回值：机器人当前状态
+- 返回值类型：Promise(Object)
+
+### 获取消息
+`getMsg(id)`
+- 参数：
+  - id : `String` - 消息 ID
+- 返回值：指定消息的详细信息
+- 返回值类型：Promise(Object)
+
+## 其他功能
+
+### 点赞
+`sendLike(uid, times)`
+- 参数：
+  - uid : `Number` - 要点赞的用户 QQ
+  - times : `Number` - 点赞次数（建议不超过 20）
+- 返回值：操作结果
+- 返回值类型：Promise
+
+### 处理加群请求
+`setGroupAddRequest(flag, subType, approve)`
+- 参数：
+  - flag : `String` - 请求标识
+  - subType : `String` - 请求子类型
+  - approve : `Boolean` - 是否同意
+- 返回值：操作结果
+- 返回值类型：void
+
+### 处理加好友请求
+`setFriendAddRequest(flag, approve)`
+- 参数：
+  - flag : `String` - 请求标识
+  - approve : `Boolean` - 是否同意
+- 返回值：操作结果
+- 返回值类型：void
+
+## 消息构建器
+
+### 文本消息
+`text(content)`
+- 参数：
+  - content : `String` - 文本内容
+- 返回值：文本消息段
+- 返回值类型：Object
+
+### At 某人
+`at(qq)`
+- 参数：
+  - qq : `Number | String` - 要 @ 的 QQ 号
+- 返回值：@消息段
+- 返回值类型：Object
+
+### 图片消息
+`img(file)`
+- 参数：
+  - file : `String | Buffer` - 图片路径、URL 或 Buffer
+- 返回值：图片消息段
+- 返回值类型：Object
+
+### 表情消息
+`face(id)`
+- 参数：
+  - id : `String | Number` - 表情 ID
+- 返回值：表情消息段
+- 返回值类型：Object
+
+### 戳一戳
+`poke(id)`
+- 参数：
+  - id : `String | Number` - 要戳的 QQ 号
+- 返回值：戳一戳消息段
+- 返回值类型：Object
+
+### 视频消息
+`video(file)`
+- 参数：
+  - file : `String` - 视频文件路径
+- 返回值：视频消息段
+- 返回值类型：Object
+
+### 语音消息
+`record(file)`
+- 参数：
+  - file : `String` - 语音文件路径
+- 返回值：语音消息段
+- 返回值类型：Object
+
+### 回复消息
+`reply(id)`
+- 参数：
+  - id : `String` - 要回复的消息 ID
+- 返回值：回复消息段
+- 返回值类型：Object
+
+### 格式化消息
+`format(msg)`
+- 参数：
+  - msg : `String | Object | Array` - 要格式化的消息
+- 返回值：格式化后的消息数组
+- 返回值类型：Array
+
+### 创建合并转发构建器
+`ForwardMsgBuilder()`
+- 返回值：新的 ForwardMsgBuilder 实例
+- 返回值类型：Object
+
+## 包构建器（高级功能）
+
+### 群消息包
+`GroupMessagePack(gid, msg, id)`
+- 参数：
+  - gid : `Number` - 群号
+  - msg : `Array` - 消息内容
+  - id : `String` - 请求 ID
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+### 私聊消息包
+`PrivateMessagePack(fid, msg, id)`
+- 参数：
+  - fid : `Number` - 好友 QQ
+  - msg : `Array` - 消息内容
+  - id : `String` - 请求 ID
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+### 合并转发消息包
+`GroupForwardMessagePack(gid, msg, id)`
+- 参数：
+  - gid : `Number` - 群号
+  - msg : `Array` - 合并转发内容
+  - id : `String` - 请求 ID
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+### 禁言包
+`GroupBanPack(gid, mid, duration)`
+- 参数：
+  - gid : `Number` - 群号
+  - mid : `Number` - 成员 QQ
+  - duration : `Number` - 禁言时长
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+### 群成员列表包
+`GroupMemberListPack(gid, id)`
+- 参数：
+  - gid : `Number` - 群号
+  - id : `String` - 请求 ID
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+### 点赞包
+`LikePack(fid, times)`
+- 参数：
+  - fid : `Number` - 用户 QQ
+  - times : `Number` - 点赞次数
+- 返回值：OneBot 协议数据包
+- 返回值类型：Object
+
+## 使用示例
+
+```javascript
+// 导入函数
+const sendGroupMsg = ll.imports("SparkAPIEx", "sendGroupMsg");
+const text = ll.imports("SparkAPIEx", "text");
+const getGroupMemberList = ll.imports("SparkAPIEx", "getGroupMemberList");
+
+// 发送消息
+sendGroupMsg(123456789, text("Hello from LLSE plugin!"));
+
+// 获取群成员列表
+const members = await getGroupMemberList(123456789);
+members.forEach(m => {
+    logger.info(`${m.nickname} - ${m.user_id}`);
+});
+```
+
+## 注意事项
+- 所有返回 Promise 的函数都需要使用 `await` 或 `.then()` 处理异步结果
+- 请确保在 SparkBridge3 完全启动后再调用这些函数
+- 部分功能需要机器人具有相应的群管理权限
