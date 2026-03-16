@@ -120,6 +120,57 @@
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.12/joingroupcheck.zip"
     },
+        ,{
+        "name": "RegexEssentials",
+        "version": "3.4.0",
+        "author": "铭记mingji |I IKUN2004",
+        "desc": "正则基础套件，支持跨服经济、悬赏猎杀、查水表及自定义丰富指令。",
+        "tags": [
+            "tool",
+            "economy",
+            "regex",
+            "admin"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-regexessentials.5838/",
+        "downloadUrl": "https://www.minebbs.com/resources/spark-regexessentials.5838/download"
+    },
+    {
+        "name": "SignPro",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "IK签到系统 - 完美支持群服数据双端互通、带游戏内豪华表单UI与全勤连签计算。",
+        "tags": [
+            "tool",
+            "economy"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-sign-ik.15547/",
+        "downloadUrl": "https://www.minebbs.com/resources/spark-sign-ik.15547/download"
+    },
+    {
+        "name": "LuckyDraw",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "群服互通趣味抽奖插件 - 完美集成白名单系统，支持智能匹配、全服通告和离线奖品暂存。",
+        "tags": [
+            "tool",
+            "toy"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-luckydraw-v.14325/",
+        "downloadUrl": "https://www.minebbs.com/resources/spark-luckydraw-v.14325/download"
+    },
+    {
+        "name": "GroupAnnounceListener",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "群公告监听与MC跨服排版转发系统 - 自动提取群聊公告与艾特全体消息，带颜色美化转发至游戏内。",
+        "tags": [
+            "tool",
+            "group",
+            "announce"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-groupannouncelistener-qq.14314/",
+        "downloadUrl": "https://www.minebbs.com/resources/spark-groupannouncelistener-qq.14314/download"
+    }
     {
         "name": "packmgr",
         "version": "0.0.1",
