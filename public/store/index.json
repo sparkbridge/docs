@@ -23,8 +23,7 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.4/spark.ccb.zip",
-        "icon":"https://www.minebbs.com/data/resource_icons/10/10421.jpg?1772875265"
-
+        "icon": "https://www.minebbs.com/data/resource_icons/10/10421.jpg?1772875265"
     },
     {
         "name": "motd",
@@ -37,7 +36,7 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.4/motd.zip",
-        "icon":"https://www.minebbs.com/data/resource_icons/5/5505.jpg?1772874981"
+        "icon": "https://www.minebbs.com/data/resource_icons/5/5505.jpg?1772874981"
     },
     {
         "name": "ping",
@@ -49,7 +48,7 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.5/spark.ping.zip",
-        "icon":"https://www.minebbs.com/data/resource_icons/15/15607.jpg?1772932684"
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15607.jpg?1772932684"
     },
     {
         "name": "webtalk",
@@ -61,7 +60,7 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.7/webtalk.zip",
-        "icon":"https://www.minebbs.com/data/resource_icons/15/15631.jpg?1773146471"
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15631.jpg?1773146471"
     },
     {
         "name": "puredeathmessage",
@@ -73,7 +72,7 @@
         ],
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.8/PureDeathMessages.zip",
-        "icon":"https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391"
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391"
     },
     {
         "name": "getimg",
@@ -120,7 +119,7 @@
         "repo": "https://github.com/sparkbridge/plugins_hub",
         "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.12/joingroupcheck.zip"
     },
-        ,{
+    {
         "name": "RegexEssentials",
         "version": "3.4.0",
         "author": "铭记mingji |I IKUN2004",
@@ -170,7 +169,7 @@
         ],
         "repo": "https://www.minebbs.com/resources/spark-groupannouncelistener-qq.14314/",
         "downloadUrl": "https://www.minebbs.com/resources/spark-groupannouncelistener-qq.14314/download"
-    }
+    },
     {
         "name": "packmgr",
         "version": "0.0.1",

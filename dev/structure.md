@@ -31,6 +31,7 @@ SparkBridge的插件结构并不复杂，需要有一个自述文件，和一个
     "loadmode":"hybrid", // 插件在什么模式下加载，分为hybrid，offline和bds  
     "priority": "init", // 插件优先级分为init, main和post
     "permission": "nor", // 插件权限级分为nor（normal）,key和core
+    "min_v":"0.0.15", // 框架最低版本，低于这个版本插件将被忽略
     "load":true //是否启用此插件，保持默认即可
 }
 
