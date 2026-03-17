@@ -30,6 +30,7 @@ outline: deep
 - [spark.QClient.getGroupList](#spark-qclient-getgrouplist): 获取群组列表。
 - [spark.QClient.getGroupHonorInfo](#spark-qclient-getgrouphonorinfo): 获取群组荣誉信息。
 - [spark.QClient.getStatus](#spark-qclient-getstatus): 获取客户端状态。
+- [spark.QClient.setGroupCard](#spark-qclient-setgroupcard): 设置群名片。
 
 ### `spark.QClient.sendGroupMsg`
 **描述:**
@@ -372,6 +373,28 @@ spark.QClient.getStatus()
     .then(data => console.log(data))
     .catch(error => console.error(error));
 ```
+
+### `spark.QClient.setGroupCard`
+**描述**
+设置群员群名片。
+
+**参数**
+- `gid` (数字): 群组ID。
+- `mid` (数字): 群成员ID。
+- `card` (字符串): 新的群名片。
+
+**返回值**
+ - Promise 对象，解析为设置结果。
+
+**用法**
+``` js
+
+spark.QClient.setGroupCard(12345678, 87654321, '新群名片')  
+    .then(data => console.log(data))  
+    .catch(error => console.error(error));
+```
+
+
 ## 如何自行实现api
 
 使用
