@@ -121,7 +121,7 @@
     },
     {
         "name": "RegexEssentials",
-        "version": "3.4.0",
+        "version": "3.5.0",
         "author": "铭记mingji |I IKUN2004",
         "desc": "正则基础套件，支持跨服经济、悬赏猎杀、查水表及自定义丰富指令。",
         "tags": [
@@ -131,11 +131,11 @@
             "admin"
         ],
         "repo": "https://www.minebbs.com/resources/spark-regexessentials.5838/",
-        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/sb3_RegexEssentials.zip"
+        "downloadUrl": "https://github.com/I-IKUN2004/I-IKUN_spark3/releases/download/v1.2.0/sb3_RegexEssentials.zip"
     },
     {
         "name": "Sign",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "author": "I IKUN2004",
         "desc": "IK签到系统 - 完美支持群服数据双端互通、带游戏内豪华表单UI与全勤连签计算。",
         "tags": [
@@ -143,7 +143,7 @@
             "economy"
         ],
         "repo": "https://www.minebbs.com/resources/spark-sign-ik.15547/",
-        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/Sign.zip"
+        "downloadUrl": "https://github.com/I-IKUN2004/I-IKUN_spark3/releases/download/v1.2.0/Sign.zip"
     },
     {
         "name": "LuckyDraw",
