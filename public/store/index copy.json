@@ -1,0 +1,195 @@
+[
+    {
+        "name": "bilibili",
+        "version": "0.0.3",
+        "author": "lition",
+        "desc": "解析b站链接/小程序/短链",
+        "tags": [
+            "bilibili",
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.11/spark.bilibili-parser.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/12/12508.jpg?1772874918"
+    },
+    {
+        "name": "ccb",
+        "version": "0.0.2",
+        "author": "lition",
+        "desc": "鉴别群聊中的踩踩背大神",
+        "tags": [
+            "ccb",
+            "toy"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.4/spark.ccb.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/10/10421.jpg?1772875265"
+    },
+    {
+        "name": "motd",
+        "version": "0.0.3",
+        "author": "lition",
+        "desc": "群内使用motd xxx查询mc服务器状态",
+        "tags": [
+            "mc",
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.4/motd.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/5/5505.jpg?1772874981"
+    },
+    {
+        "name": "ping",
+        "version": "1.0.0",
+        "author": "lition",
+        "desc": "群内使用ping xxx查询ip地址信息",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.5/spark.ping.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15607.jpg?1772932684"
+    },
+    {
+        "name": "webtalk",
+        "version": "1.0.0",
+        "author": "Sbaoor",
+        "desc": "在网页面板与服务器中对话",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.7/webtalk.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15631.jpg?1773146471"
+    },
+    {
+        "name": "puredeathmessage",
+        "version": "0.0.2",
+        "author": "Sbaoor",
+        "desc": "转发死亡消息",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.8/PureDeathMessages.zip",
+        "icon": "https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391"
+    },
+    {
+        "name": "getimg",
+        "version": "0.0.1",
+        "author": "Sbaoor",
+        "desc": "获取表情原图",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.9/getimg.zip"
+    },
+    {
+        "name": "MCWiki",
+        "version": "1.0.0",
+        "author": "咕咕鸡",
+        "desc": "在群聊中使用wiki xxx查询MCWiki",
+        "tags": [
+            "tool",
+            "wiki"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.10/MCWiki.zip"
+    },
+    {
+        "name": "DiskInformation",
+        "version": "1.0.0",
+        "author": "赫托尼亚，WillieForbes",
+        "desc": "发送 “磁盘信息” 获取硬盘信息",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.11/DiskInformation.zip"
+    },
+    {
+        "name": "joingroupcheck",
+        "version": "0.0.1",
+        "author": "lition",
+        "desc": "群组加入审核，要求发送验证码，超时踢出",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.12/joingroupcheck.zip"
+    },
+    {
+        "name": "RegexEssentials",
+        "version": "3.4.0",
+        "author": "铭记mingji |I IKUN2004",
+        "desc": "正则基础套件，支持跨服经济、悬赏猎杀、查水表及自定义丰富指令。",
+        "tags": [
+            "tool",
+            "economy",
+            "regex",
+            "admin"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-regexessentials.5838/",
+        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/sb3_RegexEssentials.zip"
+    },
+    {
+        "name": "Sign",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "IK签到系统 - 完美支持群服数据双端互通、带游戏内豪华表单UI与全勤连签计算。",
+        "tags": [
+            "tool",
+            "economy"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-sign-ik.15547/",
+        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/Sign.zip"
+    },
+    {
+        "name": "LuckyDraw",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "群服互通趣味抽奖插件 - 完美集成白名单系统，支持智能匹配、全服通告和离线奖品暂存。",
+        "tags": [
+            "tool",
+            "toy"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-luckydraw-v.14325/",
+        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/LuckyDraw.zip"
+    },
+    {
+        "name": "GroupAnnounceListener",
+        "version": "1.1.0",
+        "author": "I IKUN2004",
+        "desc": "群公告监听与MC跨服排版转发系统 - 自动提取群聊公告与艾特全体消息，带颜色美化转发至游戏内。",
+        "tags": [
+            "tool",
+            "group",
+            "announce"
+        ],
+        "repo": "https://www.minebbs.com/resources/spark-groupannouncelistener-qq.14314/",
+        "downloadUrl": "https://github.com/jinzhiyong0923/I-IKUN_spark3/releases/download/v1.0.0/GroupAnnounceListener.zip"
+    },
+    {
+        "name": "packmgr",
+        "version": "0.0.1",
+        "author": "lition",
+        "desc": "在网页上管理BDS资源包",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/sparkbridge/plugins_hub",
+        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.13/packmgr.zip"
+    },
+        {
+        "name": "os3",
+        "version": "3.0.0",
+        "author": "Daniel_兔兔",
+        "desc": "为sparkbridge而生的服务器状态查询助手",
+        "tags": [
+            "tool"
+        ],
+        "repo": "https://github.com/danieltoyama/MySparkPlugins",
+        "downloadUrl": "https://github.com/DanielToyama/MySparkPlugins/releases/download/v1.0.1/os3.zip"
+    }
+]
