@@ -67,7 +67,10 @@ const mySponsors = [
     name:"雪绘BOT团队",
     avatar: 'https://yukiebot.top/img/Yukie.ico',
     message: '为音游Orzmic设计的查分机器人'
-  }
+  },{
+    name: '慕昭悦',
+    avatar: 'https://s41.ax1x.com/2026/03/29/pe1Hssg.jpg',
+    message: 'XCD'}
 ]
 </script>
 
