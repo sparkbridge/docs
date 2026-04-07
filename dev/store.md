@@ -14,25 +14,6 @@ SparkBridge官方团队推荐您使用Github Actions构建您的插件库。
 
 ## 添加插件到商店
 
-官方的插件商店接口位于仓库[docs](https://github.com/sparkbridge/docs)中
+请您加入我们的官方群聊来获取商店管理后台
 
-打开`public/store/index.json`
-
-这里以插件`bilibili`为例
-
-``` json
-{
-        "name": "bilibili", //插件名，要与spark.json中的name严格一致，否则会导致与本地校验时错误
-        "version": "0.0.2", //插件版本，要与spark.json中的version一致，可以写字符串，也可以写数组。spark.json中严格要求为数组
-        "author": "lition",  // 插件作者
-        "desc": "解析b站链接/小程序/短链", //插件描述
-        "tags": [
-            "bilibili", //标签
-            "tool"      //约定俗成：标签应该为英文单词，多个标签用英文逗号隔开，工具类使用tool，娱乐类使用toy，库类使用lib
-        ],
-        "repo": "https://github.com/sparkbridge/plugins_hub",  //插件仓库
-        "downloadUrl": "https://github.com/sparkbridge/plugins_hub/releases/download/v1.0.3/spark.bilibili-parser.zip" //插件下载链接，要求为直链。
-    },
-```
-
-注：`downloadUrl`字段不要求强制为Github链接，也可以使用自定义直链。
+点此加入群聊 [官方群聊](https://qm.qq.com/q/aQiUNuMpIQ)
