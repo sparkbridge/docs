@@ -18,8 +18,8 @@ sidebar: true
 
 <ClientOnly>
   <ChatBubble :messages="[
-    { userClass: 'user-1', img: 'https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391' },
-    { userClass: 'user-2',  img: 'https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391',text: `给我图` },
-    { userClass: 'user-1', img: 'https://www.minebbs.com/data/resource_icons/15/15634.jpg?1773160391' },
+    { userClass: 'user-1', img: 'https://s11.ax1x.com/2022/06/26/jEKyH1.jpg' },
+    { userClass: 'user-2',  img: 'https://s11.ax1x.com/2022/06/26/jEKyH1.jpg',text: `给我图` },
+    { userClass: 'user-1', img: 'https://s11.ax1x.com/2022/06/26/jEKyH1.jpg' },
   ]" />
 </ClientOnly> 

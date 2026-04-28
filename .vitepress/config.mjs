@@ -77,6 +77,7 @@ export default defineConfig({
             { text: "ccb", link: "/plugin/docs/ccb" },
             { text: "motd", link: "/plugin/docs/motd" },
             { text: "getimg", link: "/plugin/docs/getimg" },
+            { text: "qqface", link: "/plugin/docs/qqface" },
           ]
         }
       ],
