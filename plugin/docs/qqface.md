@@ -14,7 +14,7 @@ sidebar: true
 
 可以把聊天中的原生表情同步到服务器中
 
-![](https://s41.ax1x.com/2026/04/28/pe5842j.jpg)
+![](https://s41.ax1x.com/2026/04/29/peIxg4e.png)
 
 ## 安装教程
 
@@ -22,7 +22,7 @@ sidebar: true
 
 推荐使用SB3插件资源包安装器([`packmgr`](/plugin/store.md))进行安装
 
-![](https://s41.ax1x.com/2026/04/28/pe58Vuq.png)
+![](https://s41.ax1x.com/2026/04/29/peIxW3d.png)
 
 如果没有启用，请点击`启用`
 
