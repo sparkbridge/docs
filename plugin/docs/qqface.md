@@ -28,4 +28,8 @@ sidebar: true
 
 随后在插件商店安装`qqface`插件，并且关闭`sb3_mc`中的`群聊转发到服务器`项
 
+![](https://s41.ax1x.com/2026/04/30/peolHaT.png)
+
+如果您发现无法关闭，请您更新到最新版本的SparkBridge
+
 然后下载资源包进入服务器即可
